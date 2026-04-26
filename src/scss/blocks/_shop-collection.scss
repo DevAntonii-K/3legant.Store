@@ -1,0 +1,141 @@
+
+.collections__mobile-img{
+    display: none;
+}
+@media (max-width: 376px) {
+        .collections__desktop-img{
+            display: none;
+        }
+        .collections__mobile-img {
+            display: block;
+        }
+}
+// ----------------------------
+
+.shop-collections {
+    padding-top: 48px;
+}
+@media (max-width: 376px) {
+    .shop-collections{
+        padding: 40px 0;
+    }
+}
+
+.shop-collections__container{
+    width: 1120px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap:48px;
+
+    h2{
+        font-family:var(--font-secondary);
+        font-size: 40px;
+        font-weight: 500;
+
+    }
+
+}
+@media (max-width: 376px) {
+    .shop-collections__container{
+        max-width: 311px;
+        gap: 16px;
+        align-items: center;
+
+        .shop-collections__title{
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 38px;
+            letter-spacing: -0.6px;
+        }
+    }
+}
+.shop-collections__grid {
+    display: flex;
+    flex-direction: row;
+    gap:24px;
+}
+@media (max-width: 376px) {
+    .shop-collections__grid{
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.collections__column{
+    display: flex;
+    flex-direction: column;
+    gap:24px;  
+}
+@media (max-width: 376px) {
+    .collections__column{
+        gap: 16px;
+        
+    }
+     
+}
+
+.collections__card {
+    position: relative;
+    
+    .collections__card-desc{
+        position: absolute;
+        bottom:48px;
+        left:48px;
+    }
+    @media (max-width: 376px) {
+      .collections__card-desc{
+        bottom:32px;
+        left:32px;
+      }
+    }
+    .collections__card-desc--small{
+        position: absolute;
+        bottom:40px;
+        left:32px;
+    }
+    @media (max-width: 376px) {
+      .collections__card-desc-small{
+        bottom: 32px;
+      }
+    }
+    h3 {
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        font-size: 34px;
+    }
+    
+    @media (max-width: 376px) {
+      h3 {
+        font-size:28px;
+        line-height: 34px;
+        letter-spacing: -0.6px;
+      }
+    }
+    
+    a{
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: -0.4px;
+
+        display: inline-flex;
+        align-items: center;
+        gap:4px;
+
+        color: var(--main-text-color);
+        border-bottom: 1px solid var(--main-text-color);
+
+        img{
+            width: 20px;
+        }
+        
+    }
+
+    
+}
+.shop-collection__card--large {}
+
+.shop-collection__card--small {}

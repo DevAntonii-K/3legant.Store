@@ -16,6 +16,12 @@
 	}
 }
 
+@mixin nav-mobile-mode () {
+	@media (max-width: 821px) {
+		@content;
+	}
+}
+
 @mixin tablet () {
     @media (max-width: 769px) {
 		@content;

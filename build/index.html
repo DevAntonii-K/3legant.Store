@@ -1,1072 +1,867 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>3legant.Store</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+	</head>
+
 	<body>
-		<head>
-			<meta charset="UTF-8" />
-			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<title>Travel Agent</title>
-			<link rel="preconnect" href="https://fonts.googleapis.com" />
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-			<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
-			<link rel="stylesheet" href="./css/main.css" />
-			<link rel="stylesheet" href="https://cdn.jsdelivr.net" />
-			<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
-			<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
-		</head>
-		<header class="header">
-			<div class="container nav__container">
-				<!-----------------------------------------------DESKTOP -->
+		<div class="tagline">
+			<div class="tagline__content">
+				<div class="tagline__icon">
+					<img src="./img/tagline/ticket-percent.svg" alt="" />
+				</div>
 
-				<!-- NAV -->
-				<nav class="desk-nav">
-					<svg class="icon icon--logo">
-						<use href="./img/svgsprite/sprite.symbol.svg#logo"></use>
-					</svg>
+				<div class="tagline__desc">
+					<p>30% off storewide&#160;&#8212; Limited time!</p>
+				</div>
 
-					<!-- NAV MENU -->
-					<ul class="nav__menu">
-						<li>
-							<a href="" class="--active">Home</a>
-						</li>
-						<li>
-							<a href="">About</a>
-						</li>
-						<li>
-							<a href="">Packages</a>
-						</li>
-						<li>
-							<a href="">FAQ</a>
-						</li>
-						<li>
-							<a href="">Community</a>
-						</li>
+				<div class="tagline__link">
+					<a href="#">Shop Now</a>
+					<img src="./img/tagline/arrow-right.svg" alt="" />
+				</div>
+			</div>
+
+			<div class="tagline__close">
+				<img src="./img/tagline/close.svg" alt="" />
+			</div>
+		</div>
+
+		<nav class="nav">
+			<!-- DESKTOP MENU -->
+			<div class="nav__container">
+				<div class="nav__logo">
+					<!-- Burger button (mobile only) -->
+					<button class="burger" aria-label="Open menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<!-- Mobile menu -->
+					<ul class="nav__mobile">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Contact</a></li>
 					</ul>
+					<h2>3legant.</h2>
+				</div>
 
-					<!-- NAV BUTTONS -->
-					<div class="nav__btns">
-						<button class="--login-btn">
-							Login
-						</button>
-						<button class="--sign-up-btn">
-							Sign Up
-						</button>
+				<div class="nav__list">
+					<ul>
+						<li>Home</li>
+						<li>Shop</li>
+						<li>Product</li>
+						<li>Contact Us</li>
+					</ul>
+				</div>
+
+				<div class="nav__user-tools">
+					<a class="user-tools__search" href="">
+						<img src="./img/tagline/search 02.svg" alt="" />
+					</a>
+
+					<a class="user-tools__account" href="">
+						<img src="./img/tagline/user-circle.svg" alt="" />
+					</a>
+
+					<div class="user-tools__bag">
+						<a class="__bag" href="">
+							<img src="./img/tagline/shopping bag.svg" alt="" />
+						</a>
+
+						<a class="user-tools__notification" href="">
+							<picture>
+								<source srcset="./img/nav/ellipse.webp 1x, ./img/nav/ellipse@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/nav/ellipse.png 1x, ./img/nav/ellipse@2x.png 2x" type="image/png" />
+								<img src="./img/nav/ellipse.png" alt="" />
+							</picture>
+							<span>2</span>
+						</a>
 					</div>
+				</div>
+			</div>
 
-					<!-------------------------------------------MOBILE-->
+			<!-- OPENED MOBILE MENU -->
+			<div class="mobile__menu">
+				<div class="mobile__menu-content">
+					<div class="mobile__menu-main">
+						<div class="mobile__menu-header">
+							<h2 class="mobile__menu-logo">3legant<span>.</span></h2>
 
-					<!-- MOBILE BURGER -->
-					<div class="burger">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+							<div class="mobile__menu-close-icon">
+								<img src="./img/mobile-nav/Line.svg" alt="" />
+							</div>
+						</div>
 
-					<!-- MOBILE MENU-->
-					<div class="mobile-menu">
-						<ul class="mobile-menu__list">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Contact</a></li>
+						<div class="mobile__menu-search-field">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M18.5 18.5L22 22M21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21C16.7467 21 21 16.7467 21 11.5Z"
+									stroke="#141718"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							<input type="text" placeholder="Search" />
+						</div>
+
+						<ul class="mobile__menu-list">
+							<li class="mobile__menu-item">
+								<a href="">Home</a>
+							</li>
+							<li class="mobile__menu-item">
+								<a href="">Shop</a>
+							</li>
+							<li class="mobile__menu-item">
+								<a href="">Product</a>
+							</li>
+							<li class="mobile__menu-item">
+								<a href="">Contact</a>
+							</li>
 						</ul>
-						<div class="mobile-menu__btns">
-							<button class="--login-btn">Login</button>
-							<button class="--sign-up-btn">Sign Up</button>
+					</div>
+
+					<div class="mobile__menu-footer">
+						<ul class="mobile__user-tools">
+							<li class="mobile__cart">
+								<a href="">Cart</a>
+								<img src="./img/mobile-nav/shopping bag.png" alt="" />
+							</li>
+							<li class="mobile__wishlist">
+								<a href="">Wishlist</a>
+								<img src="./img/mobile-nav/heart.svg" alt="" />
+							</li>
+						</ul>
+						<button class="mobile__menu-btn">
+							Sign In
+						</button>
+						<div class="mobile__menu-socials">
+							<a href=""><img src="./img/mobile-nav/instagram.svg" alt=""/></a>
+							<a href=""><img src="./img/mobile-nav/facebook (1).svg" alt=""/></a>
+							<a href=""><img src="./img/mobile-nav/youtube.svg" alt=""/></a>
 						</div>
 					</div>
-				</nav>
+				</div>
+			</div>
+			<div class="mobile__overlay"></div>
+			<!-- OPENED  MOBILE MENU END -->
+		</nav>
+		<!-- header -->
+		<header class="hero">
+			<div class="hero__container">
+				<div class="hero__content">
+					<div class="hero__textblock">
+						<h1>
+							Listen to&#160;<br />
+							the <span>amazing</span> music sound.
+						</h1>
+						<p>Experience music like never before</p>
+					</div>
+
+					<div class="hero__btn_wrapper">
+						<button class="hero__btn">Shopping Now</button>
+					</div>
+				</div>
 			</div>
 		</header>
 
 		<main>
-			<section class="hero">
-				<div class="container hero__container">
-					<div class="hero__cta">
-						<div class="hero__text">
-							<div class="hero__title-wrapper">
-								<h1 class="hero__title">
-									Discover your favorite place <br />
-									with us
-								</h1>
-								<!-- UNDERLINE -->
-								<svg class="hero__underline icon icon--underline">
-									<use href="./img/svgsprite/sprite.symbol.svg#underline"></use>
-								</svg>
-							</div>
+			<section class="new-arrivals">
+				<div class="new-arrivals__container">
+					<h2 class="new-arrivals__title">
+						New Arrivals
+					</h2>
 
-							<p class="hero__desc">
-								Your journey begins here with our curated travel experiences. Discover new horizons, create lasting memories, and explore the world with our expertly
-								crafted itineraries.
-							</p>
-						</div>
+					<div class="new-arrivals__slider swiper">
+						<ul class="slider__list  swiper-wrapper">
+							<!-- SLIDER CARD -->
+							<li class="slider__card swiper-slide">
+								<div class="slider__main">
+									<div class="slider__badge">
+										NEW
+									</div>
+									<img
+										class="slider__like-btn"
+										src="./img/new_arrivals/add-to-wishlist.png"
+										data-off="../../img/new_arrivals/add-to-wishlist.png"
+										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
+										data-state="off"
+										alt=""
+									/>
+									<picture>
+										<source srcset="./img/new_arrivals/01.webp 1x, ./img/new_arrivals/01@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/new_arrivals/01.jpg 1x, ./img/new_arrivals/01@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/new_arrivals/01.jpg" alt="" />
+									</picture>
+									<button class="add-to-cart-btn">
+										Add to&#160;cart
+									</button>
+								</div>
 
-						<!-- FORM -->
-						<form action="#" class="hero__booking">
-							<!-- LOCATION -->
-							<div class="hero__location">
-								<div class="hero__input-group">
-									<span class="hero__label">Locations</span>
-									<input class="hero__input" type="text" list="countries-list" placeholder="e.g Bali, Indonesia" />
-									<datalist id="countries-list">
-										<option value="Bali, Indonesia"> </option>
-										<option value="Kyiv, Ukraine"> </option>
-										<option value="Reykjavik, Iceland"> </option>
-										<option value="Paris, France"> </option>
-										<option value="Tokyo, Japan"> </option>
-										<option value="Male, Maldives"> </option>
-										<option value="Rome, Italy"> </option>
-										<option value="Barcelona, Spain"> </option>
-									</datalist>
+								<div class="slider__desc">
+									<img class="slider__item-rating" src="./img/new_arrivals/Rating Group.png" alt="" />
+									<h3 class="slider-item-name">
+										Skullcandy&#160;&#8212; Crusher anc 2 wireless headphones
+									</h3>
+									<span class="price">$299.99</span>
 								</div>
-							</div>
-							<!-- DATE -->
-							<div class="hero__date" id="date-wrapper">
-								<div class="hero__input-group">
-									<span class="hero__label">Date and time</span>
-									<input class="hero__input" type="text" id="datepicker-input" placeholder="MM/DD/YYYY" />
+							</li>
+
+							<li class="slider__card swiper-slide">
+								<div class="slider__main">
+									<div class="slider__badge">
+										NEW
+									</div>
+									<img
+										class="slider__like-btn"
+										src="./img/new_arrivals/add-to-wishlist.png"
+										data-off="../../img/new_arrivals/add-to-wishlist.png"
+										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
+										alt=""
+									/>
+									<picture>
+										<source srcset="./img/new_arrivals/02.webp 1x, ./img/new_arrivals/02@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/new_arrivals/02.jpg 1x, ./img/new_arrivals/02@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/new_arrivals/02.jpg" alt="" />
+									</picture>
+									<button class="add-to-cart-btn">
+										Add to&#160;cart
+									</button>
 								</div>
-							</div>
-							<!-- HERO BUTTON -->
-							<button type="submit" class="hero__btn">
-								<svg class="hero__search-icon icon icon--search">
-									<use href="./img/svgsprite/sprite.symbol.svg#search"></use>
-								</svg>
-							</button>
-						</form>
+
+								<div class="slider__desc">
+									<img class="slider__item-rating" src="./img/new_arrivals/Rating Group.png" alt="" />
+									<h3 class="slider-item-name">
+										Beats Studio Pro
+									</h3>
+									<span class="price">$349.99</span>
+								</div>
+							</li>
+							<li class="slider__card swiper-slide ">
+								<div class="slider__main">
+									<div class="slider__badge">
+										NEW
+									</div>
+									<img
+										class="slider__like-btn"
+										src="./img/new_arrivals/add-to-wishlist.png"
+										data-off="../../img/new_arrivals/add-to-wishlist.png"
+										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
+										alt=""
+									/>
+									<picture>
+										<source srcset="./img/new_arrivals/03.webp 1x, ./img/new_arrivals/03@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/new_arrivals/03.jpg 1x, ./img/new_arrivals/03@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/new_arrivals/03.jpg" alt="" />
+									</picture>
+									<button class="add-to-cart-btn">
+										Add to&#160;cart
+									</button>
+								</div>
+
+								<div class="slider__desc">
+									<img class="slider__item-rating" src="./img/new_arrivals/Rating Group.png" alt="" />
+									<h3 class="slider-item-name">
+										Sony&#160;&#8212; WH-CH720N Wireless Noise Canceling
+									</h3>
+									<span class="price">$149.99</span>
+								</div>
+							</li>
+							<li class="slider__card swiper-slide">
+								<div class="slider__main">
+									<div class="slider__badge">
+										NEW
+									</div>
+									<img
+										class="slider__like-btn"
+										src="./img/new_arrivals/add-to-wishlist.png"
+										data-off="../../img/new_arrivals/add-to-wishlist.png"
+										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
+										alt=""
+									/>
+									<picture>
+										<source srcset="./img/new_arrivals/04.webp 1x, ./img/new_arrivals/04@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/new_arrivals/04.jpg 1x, ./img/new_arrivals/04@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/new_arrivals/04.jpg" alt="" />
+									</picture>
+									<button class="add-to-cart-btn">
+										Add to&#160;cart
+									</button>
+								</div>
+
+								<div class="slider__desc">
+									<img class="slider__item-rating" src="./img/new_arrivals/Rating Group.png" alt="" />
+									<h3 class="slider-item-name">
+										Skullcandy&#160;&#8212; Rail True Wireless Earbuds
+									</h3>
+									<span class="price">$79.99</span>
+								</div>
+							</li>
+							<li class="slider__card swiper-slide">
+								<div class="slider__main">
+									<div class="slider__badge">
+										NEW
+									</div>
+									<img
+										class="slider__like-btn"
+										src="./img/new_arrivals/add-to-wishlist.png"
+										data-off="../../img/new_arrivals/add-to-wishlist.png"
+										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
+										alt=""
+									/>
+									<picture>
+										<source srcset="./img/new_arrivals/01.webp 1x, ./img/new_arrivals/01@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/new_arrivals/01.jpg 1x, ./img/new_arrivals/01@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/new_arrivals/01.jpg" alt="" />
+									</picture>
+									<button class="add-to-cart-btn">
+										Add to&#160;cart
+									</button>
+								</div>
+
+								<div class="slider__desc">
+									<img class="slider__item-rating" src="./img/new_arrivals/Rating Group.png" alt="" />
+									<h3 class="slider-item-name">
+										Skullcandy&#160;&#8212; Crusher anc 2 wireless headphones
+									</h3>
+									<span class="price">$299.99</span>
+								</div>
+							</li>
+
+							<li class="slider__card swiper-slide">
+								<div class="slider__main">
+									<div class="slider__badge">
+										NEW
+									</div>
+									<img
+										class="slider__like-btn"
+										src="./img/new_arrivals/add-to-wishlist.png"
+										data-off="../../img/new_arrivals/add-to-wishlist.png"
+										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
+										alt=""
+									/>
+									<picture>
+										<source srcset="./img/new_arrivals/02.webp 1x, ./img/new_arrivals/02@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/new_arrivals/02.jpg 1x, ./img/new_arrivals/02@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/new_arrivals/02.jpg" alt="" />
+									</picture>
+									<button class="add-to-cart-btn">
+										Add to&#160;cart
+									</button>
+								</div>
+
+								<div class="slider__desc">
+									<img class="slider__item-rating" src="./img/new_arrivals/Rating Group.png" alt="" />
+									<h3 class="slider-item-name">
+										Beats Studio Pro
+									</h3>
+									<span class="price">$349.99</span>
+								</div>
+							</li>
+							<li class="slider__card swiper-slide ">
+								<div class="slider__main">
+									<div class="slider__badge">
+										NEW
+									</div>
+									<img
+										class="slider__like-btn"
+										src="./img/new_arrivals/add-to-wishlist.png"
+										data-off="../../img/new_arrivals/add-to-wishlist.png"
+										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
+										alt=""
+									/>
+									<picture>
+										<source srcset="./img/new_arrivals/03.webp 1x, ./img/new_arrivals/03@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/new_arrivals/03.jpg 1x, ./img/new_arrivals/03@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/new_arrivals/03.jpg" alt="" />
+									</picture>
+									<button class="add-to-cart-btn">
+										Add to&#160;cart
+									</button>
+								</div>
+
+								<div class="slider__desc">
+									<img class="slider__item-rating" src="./img/new_arrivals/Rating Group.png" alt="" />
+									<h3 class="slider-item-name">
+										Sony&#160;&#8212; WH-CH720N Wireless Noise Canceling
+									</h3>
+									<span class="price">$149.99</span>
+								</div>
+							</li>
+							<li class="slider__card swiper-slide">
+								<div class="slider__main">
+									<div class="slider__badge">
+										NEW
+									</div>
+									<img
+										class="slider__like-btn"
+										src="./img/new_arrivals/add-to-wishlist.png"
+										data-off="../../img/new_arrivals/add-to-wishlist.png"
+										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
+										alt=""
+									/>
+									<picture>
+										<source srcset="./img/new_arrivals/04.webp 1x, ./img/new_arrivals/04@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/new_arrivals/04.jpg 1x, ./img/new_arrivals/04@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/new_arrivals/04.jpg" alt="" />
+									</picture>
+									<button class="add-to-cart-btn">
+										Add to&#160;cart
+									</button>
+								</div>
+
+								<div class="slider__desc">
+									<img class="slider__item-rating" src="./img/new_arrivals/Rating Group.png" alt="" />
+									<h3 class="slider-item-name">
+										Skullcandy&#160;&#8212; Rail True Wireless Earbuds
+									</h3>
+									<span class="price">$79.99</span>
+								</div>
+							</li>
+						</ul>
 					</div>
+				</div>
+			</section>
 
-					<div class="hero__images">
-						<div class="hero__img-main">
+			<section class="shop-collections">
+				<div class="shop-collections__container">
+					<h2 class="shop-collections__title">Shop Collection</h2>
+					<div class="shop-collections__grid">
+						<div class="collections__card shop-collection__card--large">
 							<picture>
-								<source srcset="./img/Subtract.webp 1x, ./img/Subtract@2x.webp 2x" type="image/webp" />
-								<source srcset="./img/Subtract.png 1x, ./img/Subtract@2x.png 2x" type="image/png" />
-								<img src="./img/Subtract.png" alt="hero img" />
+								<source srcset="./img/shop-collections/headbands.webp 1x, ./img/shop-collections/headbands@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/shop-collections/headbands.jpg 1x, ./img/shop-collections/headbands@2x.jpg 2x" type="image/jpeg" />
+								<img class="collections__desktop-img" src="./img/shop-collections/headbands.jpg" alt="" />
 							</picture>
+							<picture>
+								<source srcset="./img/shop-collections/headbands-mob.webp 1x, ./img/shop-collections/headbands-mob@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/shop-collections/headbands-mob.png 1x, ./img/shop-collections/headbands-mob@2x.png 2x" type="image/png" />
+								<img class="collections__mobile-img" src="./img/shop-collections/headbands-mob.png" />
+							</picture>
+							<div class="collections__card-desc">
+								<h3>Headband</h3>
+								<a href=""
+									>Collection
+									<img src="./img/shop-collections/arrow-right.svg" alt="" />
+								</a>
+							</div>
 						</div>
-						<div class="hero__img-product">
+						<div class="collections__column">
+							<div class="collections__card shop-collection__card--small">
+								<picture>
+									<source srcset="./img/shop-collections/earbuds.webp 1x, ./img/shop-collections/earbuds@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/shop-collections/earbuds.jpg 1x, ./img/shop-collections/earbuds@2x.jpg 2x" type="image/jpeg" />
+									<img class="collections__desktop-img" src="./img/shop-collections/earbuds.jpg" alt="" />
+								</picture>
+								<picture>
+									<source srcset="./img/shop-collections/earbuds-mob.webp 1x, ./img/shop-collections/earbuds-mob@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/shop-collections/earbuds-mob.png 1x, ./img/shop-collections/earbuds-mob@2x.png 2x" type="image/png" />
+									<img class="collections__mobile-img" src="./img/shop-collections/earbuds-mob.png" />
+								</picture>
+								<div class="collections__card-desc--small">
+									<h3>Earbuds</h3>
+									<a href=""
+										>Collection
+										<img src="./img/shop-collections/arrow-right.svg" alt="" />
+									</a>
+								</div>
+							</div>
+
+							<div class="collections__card shop-collection__card--small">
+								<picture>
+									<source srcset="./img/shop-collections/accesories.webp 1x, ./img/shop-collections/accesories@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/shop-collections/accesories.jpg 1x, ./img/shop-collections/accesories@2x.jpg 2x" type="image/jpeg" />
+									<img class="collections__desktop-img" src="./img/shop-collections/accesories.jpg" alt="" />
+								</picture>
+								<picture>
+									<source srcset="./img/shop-collections/accesories-mob.webp 1x, ./img/shop-collections/accesories-mob@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/shop-collections/accesories-mob.png 1x, ./img/shop-collections/accesories-mob@2x.png 2x" type="image/png" />
+									<img class="collections__mobile-img" src="./img/shop-collections/accesories-mob.png" />
+								</picture>
+								<div class="collections__card-desc--small">
+									<h3>Accessories</h3>
+									<a href=""
+										>Collection
+										<img src="./img/shop-collections/arrow-right.svg" alt="" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="best-sellers">
+				<div class="best-sellers__container">
+					<h2 class="best-sellers__title">
+						Best Seller
+					</h2>
+					<ul class="best-sellers__list">
+						<!-- CARD 01 -->
+						<li class="best-seller__item-card">
+							<a href="">
+								<div class="best-seller__main">
+									<div class="best-seller__badge">
+										HOT
+									</div>
+									<picture>
+										<source srcset="./img/best-sellers/01.webp 1x, ./img/best-sellers/01@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/best-sellers/01.jpg 1x, ./img/best-sellers/01@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/best-sellers/01.jpg" alt="" />
+									</picture>
+								</div>
+
+								<div class="best-seller__desc">
+									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-seller__item-name item--elipsis">
+										Skullcandy&#160;&#8212; Crusher anc 2 wireless headphones
+									</h3>
+									<span class="best-seller__price">$299.99</span>
+								</div>
+							</a>
+						</li>
+						<!-- CARD 02 -->
+						<li class="best-seller__item-card">
+							<a href="">
+								<div class="best-seller__main">
+									<div class="best-seller__badge">
+										HOT
+									</div>
+									<picture>
+										<source srcset="./img/best-sellers/02.webp 1x, ./img/best-sellers/02@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/best-sellers/02.jpg 1x, ./img/best-sellers/02@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/best-sellers/02.jpg" alt="" />
+									</picture>
+								</div>
+
+								<div class="best-seller__desc">
+									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-seller__item-name item--elipsis">
+										Beats
+										<br />
+										Studio Pro
+									</h3>
+									<span class="best-seller__price">$349.99</span>
+								</div>
+							</a>
+						</li>
+						<!-- CARD 03 -->
+						<li class="best-seller__item-card">
+							<a href="">
+								<div class="best-seller__main">
+									<div class="best-seller__badge">
+										HOT
+									</div>
+									<picture>
+										<source srcset="./img/best-sellers/03.webp 1x, ./img/best-sellers/03@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/best-sellers/03.jpg 1x, ./img/best-sellers/03@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/best-sellers/03.jpg" alt="" />
+									</picture>
+								</div>
+
+								<div class="best-seller__desc">
+									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-seller__item-name item--elipsis">
+										Sony&#160;&#8212; WH-CH720N Wireless Noise Canceling
+									</h3>
+									<span class="best-seller__price">$149.99</span>
+								</div>
+							</a>
+						</li>
+						<!-- CARD 04 -->
+						<li class="best-seller__item-card">
+							<a href="">
+								<div class="best-seller__main">
+									<div class="best-seller__badge">
+										HOT
+									</div>
+									<picture>
+										<source srcset="./img/best-sellers/04.webp 1x, ./img/best-sellers/04@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/best-sellers/04.jpg 1x, ./img/best-sellers/04@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/best-sellers/04.jpg" alt="" />
+									</picture>
+								</div>
+
+								<div class="best-seller__desc">
+									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-seller__item-name item--elipsis">
+										Skullcandy&#160;&#8212; Rail True Wireless Earbuds
+									</h3>
+									<span class="best-seller__price">$79.99</span>
+								</div>
+							</a>
+						</li>
+						<!-- CARD 05 -->
+						<li class="best-seller__item-card">
 							<a href=""
-								><picture>
-									<source srcset="./img/Product.webp 1x, ./img/Product@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/Product.png 1x, ./img/Product@2x.png 2x" type="image/png" />
-									<img src="./img/Product.png" alt="hero img" /> </picture
-							></a>
-						</div>
-						<div class="hero__scroll">
-							<div class="hero__scroll-wrapper">
-								<picture>
-									<source srcset="./img/scroll-down-text.webp 1x, ./img/scroll-down-text@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/scroll-down-text.png 1x, ./img/scroll-down-text@2x.png 2x" type="image/png" />
-									<img class="hero__scroll-text" src="./img/scroll-down-text.png" alt="" />
-								</picture>
-								<picture>
-									<source srcset="./img/Component.webp 1x, ./img/Component@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/Component.png 1x, ./img/Component@2x.png 2x" type="image/png" />
-									<img class="hero__scroll-icon" src="./img/Component.png" alt="" />
-								</picture>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="partners">
-				<div class="container partners__content">
-					<h2 class="partners__title">Our Travel Partner</h2>
-					<div class="partners__list">
-						<img src="./img/Traveloka logo.png" alt="Traveloka" class="partners__logo" />
-						<img src="./img/airbnb logo.png" alt="Airbnb" class="partners__logo" />
-						<img src="./img/Expedia logo.png" alt="Expedia" class="partners__logo" />
-						<img src="./img/Skyscanner logo.png" alt="Skyscanner" class="partners__logo" />
-						<img src="./img/american-airlines logo.png" alt="American Airlines" class="partners__logo" />
-					</div>
-				</div>
-			</section>
-			<section class="destinations">
-				<div class="container destinations-container">
-					<!-- SECTION HEADER BLOCK -->
-					<div class="destinations__header">
-						<div class="destinations__header-content">
-							<h2 class="destinations__title">Popular Destinations</h2>
-							<p class="destinations__subtitle">See our popular destinations that our client choose</p>
-						</div>
+								><div class="best-seller__main">
+									<div class="best-seller__badge">
+										HOT
+									</div>
+									<picture>
+										<source srcset="./img/best-sellers/05.webp 1x, ./img/best-sellers/05@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/best-sellers/05.jpg 1x, ./img/best-sellers/05@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/best-sellers/05.jpg" alt="" />
+									</picture>
+								</div>
 
-						<!-- SWIPER BUTTONS -->
-						<div class="destinations__nav">
-							<button class="destinations__btn destinations__btn--prev">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-									<path d="M15 18l-6-6 6-6" />
-								</svg>
+								<div class="best-seller__desc">
+									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-seller__item-name item--elipsis">
+										Beats
+										<br />
+										Studio Pro
+									</h3>
+									<span class="best-seller__price">$249.99</span>
+								</div>
+							</a>
+						</li>
+						<!-- CARD 06 -->
+						<li class="best-seller__item-card">
+							<a href="">
+								<div class="best-seller__main">
+									<div class="best-seller__badge">
+										HOT
+									</div>
+									<picture>
+										<source srcset="./img/best-sellers/06.webp 1x, ./img/best-sellers/06@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/best-sellers/06.jpg 1x, ./img/best-sellers/06@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/best-sellers/06.jpg" alt="" />
+									</picture>
+								</div>
+
+								<div class="best-seller__desc">
+									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-seller__item-name item--elipsis">
+										JBL Reflect Flow Pro+ Bluetooth Truly Wireless Sports
+									</h3>
+									<span class="best-seller__price">$179.95</span>
+								</div>
+							</a>
+						</li>
+						<!-- CARD 07 -->
+						<li class="best-seller__item-card">
+							<a href="">
+								<div class="best-seller__main">
+									<div class="best-seller__badge">
+										HOT
+									</div>
+									<picture>
+										<source srcset="./img/best-sellers/07.webp 1x, ./img/best-sellers/07@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/best-sellers/07.jpg 1x, ./img/best-sellers/07@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/best-sellers/07.jpg" alt="" />
+									</picture>
+								</div>
+
+								<div class="best-seller__desc">
+									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-seller__item-name item--elipsis">
+										Bose
+										<br />
+										QuietComfort Headphones
+									</h3>
+									<span class="best-seller__price">$349.00</span>
+								</div>
+							</a>
+						</li>
+						<!-- CARD 08 -->
+						<li class="best-seller__item-card">
+							<a href="">
+								<div class="best-seller__main">
+									<div class="best-seller__badge">
+										HOT
+									</div>
+									<picture>
+										<source srcset="./img/best-sellers/08.webp 1x, ./img/best-sellers/08@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/best-sellers/08.jpg 1x, ./img/best-sellers/08@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/best-sellers/08.jpg" alt="" />
+									</picture>
+								</div>
+
+								<div class="best-seller__desc">
+									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-seller__item-name item--elipsis">
+										AKG
+										<br />
+										Y600NC Wireless
+									</h3>
+									<span class="best-seller__price">$349.99</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="discount">
+				<div class="discount__container">
+					<div class="discount__row">
+						<picture>
+							<source srcset="./img/discount/promotion-desc.webp 1x, ./img/discount/promotion-desc@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/discount/promotion-desc.jpg 1x, ./img/discount/promotion-desc@2x.jpg 2x" type="image/jpeg" />
+							<img class="discount__desktop-img" src="./img/discount/promotion-desc.jpg" alt="" />
+						</picture>
+						<picture>
+							<source srcset="./img/discount/promotion-mob.webp 1x, ./img/discount/promotion-mob@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/discount/promotion-mob.jpg 1x, ./img/discount/promotion-mob@2x.jpg 2x" type="image/jpeg" />
+							<img class="discount__mobile-img" src="./img/discount/promotion-mob.jpg" alt="" />
+						</picture>
+
+						<div class="discount__offer-block">
+							<div class="offer__desc">
+								<span>pROMOTION</span>
+								<h2>Hurry up! 40% OFF</h2>
+								<p>Thousands of&#160;high tech are waiting for you</p>
+							</div>
+
+							<div class="offer__countdown-timer">
+								<p>Offer expires in:</p>
+
+								<div class="countdown-timer">
+									<div class="timer-unit">
+										<span id="days" class="timer-value">02</span>
+										<span class="timer-label">Days</span>
+									</div>
+									<div class="timer-unit">
+										<span id="hours" class="timer-value">12</span>
+										<span class="timer-label">Hours</span>
+									</div>
+									<div class="timer-unit">
+										<span id="minutes" class="timer-value">45</span>
+										<span class="timer-label">Minutes</span>
+									</div>
+									<div class="timer-unit">
+										<span id="seconds" class="timer-value">05</span>
+										<span class="timer-label">Seconds</span>
+									</div>
+								</div>
+							</div>
+
+							<button class="discount__btn">
+								Shop now
 							</button>
-							<button class="destinations__btn destinations__btn--next">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-									<path d="M9 18l6-6-6-6" />
-								</svg>
-							</button>
-						</div>
-					</div>
-
-					<div class="destinations__slider swiper">
-						<div class="destinations__slider-wrapper swiper-wrapper">
-							<div class="destinations__slide swiper-slide">
-								<!-- SLIDE 1 -->
-								<a href="#" class="destination-card">
-									<div class="destination-card__image">
-										<picture>
-											<source srcset="./img/venice.webp 1x, ./img/venice@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/venice.jpg 1x, ./img/venice@2x.jpg 2x" type="image/jpeg" />
-											<img src="./img/venice.jpg" alt="Venice, Italy" />
-										</picture>
-									</div>
-
-									<div class="destination-card__body">
-										<div class="destination-card__info">
-											<h3 class="destination-card__name">Venice, Italy</h3>
-											<p class="destination-card__price">Starts from <span>$</span> <strong>900</strong></p>
-										</div>
-
-										<div class="destination-card__rating rating">
-											<svg class="icon icon--star">
-												<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-											</svg>
-											<span class="rating__score">(4.5)</span>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="destinations__slide swiper-slide">
-								<!-- SLIDE 2 -->
-								<a href="#" class="destination-card">
-									<div class="destination-card__image">
-										<picture>
-											<source srcset="./img/bali.webp 1x, ./img/bali@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/bali.png 1x, ./img/bali@2x.png 2x" type="image/png" />
-											<img src="./img/bali.png" alt="Bali, Indonesia" />
-										</picture>
-									</div>
-
-									<div class="destination-card__body">
-										<div class="destination-card__info">
-											<h3 class="destination-card__name">Bali, Indonesia</h3>
-											<p class="destination-card__price">Starts from <span>$</span> <strong>480</strong></p>
-										</div>
-
-										<div class="destination-card__rating rating">
-											<svg class="icon icon--star">
-												<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-											</svg>
-											<span class="rating__score">(4.5)</span>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="destinations__slide swiper-slide">
-								<!-- SLIDE 3 -->
-								<a href="#" class="destination-card">
-									<div class="destination-card__image">
-										<picture>
-											<source srcset="./img/bangkok.webp 1x, ./img/bangkok@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/bangkok.png 1x, ./img/bangkok@2x.png 2x" type="image/png" />
-											<img src="./img/bangkok.png" alt="Bangkok, Thailand" />
-										</picture>
-									</div>
-
-									<div class="destination-card__body">
-										<div class="destination-card__info">
-											<h3 class="destination-card__name">Bangkok, Thailand</h3>
-											<p class="destination-card__price">Starts from <span>$</span> <strong>440</strong></p>
-										</div>
-
-										<div class="destination-card__rating rating">
-											<svg class="icon icon--star">
-												<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-											</svg>
-											<span class="rating__score">(4.5)</span>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="destinations__slide swiper-slide">
-								<!-- SLIDE 4 -->
-								<a href="#" class="destination-card">
-									<div class="destination-card__image">
-										<picture>
-											<source srcset="./img/santorini.webp 1x, ./img/santorini@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/santorini.png 1x, ./img/santorini@2x.png 2x" type="image/png" />
-											<img src="./img/santorini.png" alt="Santorini, Greek" />
-										</picture>
-									</div>
-
-									<div class="destination-card__body">
-										<div class="destination-card__info">
-											<h3 class="destination-card__name">Santorini, Greek</h3>
-											<p class="destination-card__price">Starts from <span>$</span> <strong>900</strong></p>
-										</div>
-
-										<div class="destination-card__rating rating">
-											<svg class="icon icon--star">
-												<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-											</svg>
-											<span class="rating__score">(4.5)</span>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="destinations__slide swiper-slide">
-								<!-- SLIDE 5 -->
-								<a href="#" class="destination-card">
-									<div class="destination-card__image">
-										<picture>
-											<source srcset="./img/paris.webp 1x, ./img/paris@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/paris.png 1x, ./img/paris@2x.png 2x" type="image/png" />
-											<img src="./img/paris.png" alt="Paris, France" />
-										</picture>
-									</div>
-
-									<div class="destination-card__body">
-										<div class="destination-card__info">
-											<h3 class="destination-card__name">Paris, France</h3>
-											<p class="destination-card__price">Starts from <span>$</span> <strong>1100</strong></p>
-										</div>
-
-										<div class="destination-card__rating rating">
-											<svg class="icon icon--star">
-												<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-											</svg>
-											<span class="rating__score">(4.5)</span>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="destinations__slide swiper-slide">
-								<!-- SLIDE 6 -->
-								<a href="#" class="destination-card">
-									<div class="destination-card__image">
-										<picture>
-											<source srcset="./img/new-york.webp 1x, ./img/new-york@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/new-york.png 1x, ./img/new-york@2x.png 2x" type="image/png" />
-											<img src="./img/new-york.png" alt="New York, USA" />
-										</picture>
-									</div>
-
-									<div class="destination-card__body">
-										<div class="destination-card__info">
-											<h3 class="destination-card__name">New York, USA</h3>
-											<p class="destination-card__price">Starts from <span>$</span> <strong>1800</strong></p>
-										</div>
-
-										<div class="destination-card__rating rating">
-											<svg class="icon icon--star">
-												<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-											</svg>
-											<span class="rating__score">(4.5)</span>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="destinations__slide swiper-slide">
-								<!-- SLIDE 7 -->
-								<a href="#" class="destination-card">
-									<div class="destination-card__image">
-										<picture>
-											<source srcset="./img/dubai.webp 1x, ./img/dubai@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/dubai.png 1x, ./img/dubai@2x.png 2x" type="image/png" />
-											<img src="./img/dubai.png" alt="Dubai, UAE" />
-										</picture>
-									</div>
-
-									<div class="destination-card__body">
-										<div class="destination-card__info">
-											<h3 class="destination-card__name">Dubai, UAE</h3>
-											<p class="destination-card__price">Starts from <span>$</span> <strong>900</strong></p>
-										</div>
-
-										<div class="destination-card__rating rating">
-											<svg class="icon icon--star">
-												<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
-											</svg>
-											<span class="rating__score">(4.5)</span>
-										</div>
-									</div>
-								</a>
-							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="feedback">
-				<div class="container feedback__container">
-					<div class="feedback__row">
-						<!-- FIRST COLUMN -->
-						<div class="feedback__column swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<!-- SLIDE 1 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;An&#160;outstanding resource for travel enthusiasts! The website&#8217;s destination reviews and travel advice were spot-on.
-													I&#160;now trust their recommendations for all my&#160;trips.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/01.webp 1x, ./img/01@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/01.png 1x, ./img/01@2x.png 2x" type="image/png" />
-													<img src="./img/01.png" alt="Hendra Paru Paru" />
-												</picture>
-												<div class="author-info">
-													<strong>Hendra Paru Paru</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
 
-								<div class="swiper-slide">
-									<!-- SLIDE 2 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;I&#160;had a&#160;seamless booking process with this travel website. Their website was easy to&#160;navigate, and I got
-													fantastic deals on&#160;flights and accommodation. Will definitely use them for future trips.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/02.webp 1x, ./img/02@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/02.png 1x, ./img/02@2x.png 2x" type="image/png" />
-													<img src="./img/02.png" alt="Akbar Cenglu" />
-												</picture>
-												<div class="author-info">
-													<strong>Akbar Cenglu</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
+			<section class="features">
+				<div class="features__container">
+					<div class="features__block">
+						<ul class="features-list">
+							<li class="feature">
+								<img src="./img/features/shipping.svg" alt="" />
+								<div class="feature__desc">
+									<h3>Free Shipping</h3>
+									<span>Order above $200</span>
 								</div>
-
-								<div class="swiper-slide">
-									<!-- SLIDE 3 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;The detailed travel guides provided by&#160;this website were invaluable during our journey. We&#160;felt confident
-													exploring a new destination, thanks to&#160;their helpful tips and insights. erat.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/03.webp 1x, ./img/03@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/03.png 1x, ./img/03@2x.png 2x" type="image/png" />
-													<img src="./img/03.png" alt="Jake Paul" />
-												</picture>
-												<div class="author-info">
-													<strong>Jake Paul</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
+							</li>
+							<li class="feature">
+								<img src="./img/features/finance.svg" alt="" />
+								<div class="feature__desc">
+									<h3>Free Shipping</h3>
+									<span>Order above $200</span>
 								</div>
-
-								<!-- LOOPED SLIDES -->
-								<div class="swiper-slide">
-									<!-- SLIDE 1 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;An&#160;outstanding resource for travel enthusiasts! The website&#8217;s destination reviews and travel advice were spot-on.
-													I&#160;now trust their recommendations for all my&#160;trips.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/01.webp 1x, ./img/01@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/01.png 1x, ./img/01@2x.png 2x" type="image/png" />
-													<img src="./img/01.png" alt="Hendra Paru Paru" />
-												</picture>
-												<div class="author-info">
-													<strong>Hendra Paru Paru</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
+							</li>
+							<li class="feature">
+								<img src="./img/features/lock.svg" alt="" />
+								<div class="feature__desc">
+									<h3>Free Shipping</h3>
+									<span>Order above $200</span>
 								</div>
-
-								<div class="swiper-slide">
-									<!-- SLIDE 2 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;I&#160;had a&#160;seamless booking process with this travel website. Their website was easy to&#160;navigate, and I got
-													fantastic deals on&#160;flights and accommodation. Will definitely use them for future trips.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/02.webp 1x, ./img/02@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/02.png 1x, ./img/02@2x.png 2x" type="image/png" />
-													<img src="./img/02.png" alt="Akbar Cenglu" />
-												</picture>
-												<div class="author-info">
-													<strong>Akbar Cenglu</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
+							</li>
+							<li class="feature">
+								<img src="./img/features/call.svg" alt="" />
+								<div class="feature__desc">
+									<h3>Free Shipping</h3>
+									<span>Order above $200</span>
 								</div>
-
-								<div class="swiper-slide">
-									<!-- SLIDE 3 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;The detailed travel guides provided by&#160;this website were invaluable during our journey. We&#160;felt confident
-													exploring a new destination, thanks to&#160;their helpful tips and insights. erat.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/03.webp 1x, ./img/03@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/03.png 1x, ./img/03@2x.png 2x" type="image/png" />
-													<img src="./img/03.png" alt="Jake Paul" />
-												</picture>
-												<div class="author-info">
-													<strong>Jake Paul</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-							</div>
-						</div>
-
-						<!-- SECOND COLUMN -->
-
-						<div class="feedback__column swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<!-- SLIDE 4 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;Amazing experience! The travel website made booking our vacation a&#160;breeze. Everything was well-organized, and
-													we&#160;had a fantastic time exploring new places. Highly recommend!&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/04.webp 1x, ./img/04@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/04.png 1x, ./img/04@2x.png 2x" type="image/png" />
-													<img src="./img/04.png" alt="Nichole Edward" />
-												</picture>
-												<div class="author-info">
-													<strong>Nichole Edward</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-
-								<div class="swiper-slide">
-									<!-- SLIDE 5 -->
-									<article class="feedback-column__post swiper-slide">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;The travel website&#8217;s customer service is&#160;top-notch! They were quick to&#160;respond to&#160;my&#160;queries and
-													helped me&#160;plan a&#160;dream vacation. It&#160;was an&#160;excellent experience from start to&#160;finish.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/05.webp 1x, ./img/05@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/05.png 1x, ./img/05@2x.png 2x" type="image/png" />
-													<img src="./img/05.png" alt="Jennice Ong" />
-												</picture>
-												<div class="author-info">
-													<strong>Jennice Ong</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<div class="swiper-slide">
-									<!-- SLIDE 6 -->
-									<article class="feedback-column__post swiper-slide">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;Hands down the best travel website I&#8217;ve ever used! The user interface was so&#160;intuitive, and I&#160;was able
-													to&#160;book my&#160;dream vacation effortlessly. erat.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/06.webp 1x, ./img/06@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/06.png 1x, ./img/06@2x.png 2x" type="image/png" />
-													<img src="./img/06.png" alt="Jackson Michael" />
-												</picture>
-												<div class="author-info">
-													<strong>Jackson Michael</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-
-								<!-- LOOPED SLIDES -->
-								<div class="swiper-slide">
-									<!-- SLIDE 4 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;Amazing experience! The travel website made booking our vacation a&#160;breeze. Everything was well-organized, and
-													we&#160;had a fantastic time exploring new places. Highly recommend!&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/04.webp 1x, ./img/04@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/04.png 1x, ./img/04@2x.png 2x" type="image/png" />
-													<img src="./img/04.png" alt="Nichole Edward" />
-												</picture>
-												<div class="author-info">
-													<strong>Nichole Edward</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-
-								<div class="swiper-slide">
-									<!-- SLIDE 5 -->
-									<article class="feedback-column__post swiper-slide">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;The travel website&#8217;s customer service is&#160;top-notch! They were quick to&#160;respond to&#160;my&#160;queries and
-													helped me&#160;plan a&#160;dream vacation. It&#160;was an&#160;excellent experience from start to&#160;finish.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/05.webp 1x, ./img/05@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/05.png 1x, ./img/05@2x.png 2x" type="image/png" />
-													<img src="./img/05.png" alt="Jennice Ong" />
-												</picture>
-												<div class="author-info">
-													<strong>Jennice Ong</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<div class="swiper-slide">
-									<!-- SLIDE 6 -->
-									<article class="feedback-column__post swiper-slide">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;Hands down the best travel website I&#8217;ve ever used! The user interface was so&#160;intuitive, and I&#160;was able
-													to&#160;book my&#160;dream vacation effortlessly. erat.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/06.webp 1x, ./img/06@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/06.png 1x, ./img/06@2x.png 2x" type="image/png" />
-													<img src="./img/06.png" alt="Jackson Michael" />
-												</picture>
-												<div class="author-info">
-													<strong>Jackson Michael</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-							</div>
-						</div>
-
-						<!-- THIRD COLUMN -->
-
-						<div class="feedback__column swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<!-- SLIDE 7 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;An&#160;outstanding resource for travel enthusiasts! The website&#8217;s destination reviews and travel advice were spot-on.
-													I&#160;now trust their recommendations for all my&#160;trips.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/07.webp 1x, ./img/07@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/07.png 1x, ./img/07@2x.png 2x" type="image/png" />
-													<img src="./img/07.png" alt="Jonathan R." />
-												</picture>
-												<div class="author-info">
-													<strong>Jonathan R.</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-
-								<div class="swiper-slide">
-									<!-- SLIDE 8 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;I&#160;loved the personalized itinerary feature of&#160;this travel website. It&#160;allowed me&#160;to&#160;plan
-													my&#160;trip according to&#160;my preferences, making it&#160;a&#160;truly customized experience.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/08.webp 1x, ./img/08@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/08.png 1x, ./img/08@2x.png 2x" type="image/png" />
-													<img src="./img/08.png" alt="Angela Cole" />
-												</picture>
-												<div class="author-info">
-													<strong>Angela Cole</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-
-								<div class="swiper-slide">
-									<!-- SLIDE 9 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;A&#160;one-stop-shop for all things travel! The website&#8217;s variety of&#160;travel options and user reviews helped
-													me&#160;make informed decisions and ensured a&#160;smooth trip.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/09.webp 1x, ./img/09@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/09.png 1x, ./img/09@2x.png 2x" type="image/png" />
-													<img src="./img/09.png" alt="Bambang Susilo" />
-												</picture>
-												<div class="author-info">
-													<strong>Bambang Susilo</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-
-								<!-- LOOPED SLIDES -->
-
-								<div class="swiper-slide">
-									<!-- SLIDE 7 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;An&#160;outstanding resource for travel enthusiasts! The website&#8217;s destination reviews and travel advice were spot-on.
-													I&#160;now trust their recommendations for all my&#160;trips.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/07.webp 1x, ./img/07@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/07.png 1x, ./img/07@2x.png 2x" type="image/png" />
-													<img src="./img/07.png" alt="Jonathan R." />
-												</picture>
-												<div class="author-info">
-													<strong>Jonathan R.</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-
-								<div class="swiper-slide">
-									<!-- SLIDE 8 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;I&#160;loved the personalized itinerary feature of&#160;this travel website. It&#160;allowed me&#160;to&#160;plan
-													my&#160;trip according to&#160;my preferences, making it&#160;a&#160;truly customized experience.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/08.webp 1x, ./img/08@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/08.png 1x, ./img/08@2x.png 2x" type="image/png" />
-													<img src="./img/08.png" alt="Angela Cole" />
-												</picture>
-												<div class="author-info">
-													<strong>Angela Cole</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-
-								<div class="swiper-slide">
-									<!-- SLIDE 9 -->
-									<article class="feedback-column__post">
-										<figure>
-											<div class="rating">
-												<picture>
-													<source srcset="./img/Stars.webp 1x, ./img/Stars@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/Stars.png 1x, ./img/Stars@2x.png 2x" type="image/png" />
-													<img src="./img/Stars.png" alt="star rating" />
-												</picture>
-											</div>
-											<blockquote>
-												<p>
-													&#171;A&#160;one-stop-shop for all things travel! The website&#8217;s variety of&#160;travel options and user reviews helped
-													me&#160;make informed decisions and ensured a&#160;smooth trip.&#187;
-												</p>
-											</blockquote>
-											<figcaption>
-												<picture>
-													<source srcset="./img/09.webp 1x, ./img/09@2x.webp 2x" type="image/webp" />
-													<source srcset="./img/09.png 1x, ./img/09@2x.png 2x" type="image/png" />
-													<img src="./img/09.png" alt="Bambang Susilo" />
-												</picture>
-												<div class="author-info">
-													<strong>Bambang Susilo</strong>
-													<span>Travel Enthusiast</span>
-												</div>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-							</div>
-						</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
 			<section class="newsletter">
-				<div class="container newsletter__container">
-					<div class="newsletter__row">
-						<div class="newsletter__text-block">
-							<h2 class="newsletter__title">Join our newsletter to&#160;stay up&#160;to&#160;date</h2>
-							<p class="newsletter__subtitle">Stay connected with our brand</p>
+				<div class="newsletter__container container">
+					<div class="newsletter__cta">
+						<div class="cta__desc">
+							<h3>Join Our Newsletter</h3>
+							<p>Sign up&#160;for deals, new products and promotions</p>
 						</div>
-
-						<!-- FORM -->
-						<form action="#" class="newsletter__form">
-							<div class="newsletter__field">
-								<svg class="newsletter__icon icon icon--mail">
-									<use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
-								</svg>
-								<input class="newsletter__input" type="email" placeholder="Enter your email" required />
-							</div>
-
-							<button type="submit" class="newsletter__button">
-								Subscribe
-							</button>
-						</form>
+						<div class="newsletter-form__wrapper">
+							<form class="newsletter-form">
+								<img src="./img/newsletter/email.svg" alt="" />
+								<input type="email" placeholder="Email address" />
+								<button type="submit">Signup</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container footer__container">
+			<div class="footer__container">
 				<div class="footer__content">
-					<!-- LOGO -->
-					<div class="footer__brand">
-						<picture>
-							<source srcset="./img/Logo.webp 1x, ./img/Logo@2x.webp 2x" type="image/webp" />
-							<source srcset="./img/Logo.png 1x, ./img/Logo@2x.png 2x" type="image/png" />
-							<img src="./img/Logo.png" alt="Travel Logo" class="footer__logo" />
-						</picture>
-						<p class="footer__desc">
-							Wanderlust meets wander well&#160;&#8212; <br />
-							Experience seamless travel with our services.
-						</p>
-					</div>
-
-					<!-- NAVIGATION -->
 					<nav class="footer__nav">
-						<!-- COLUMN 1 -->
-						<div class="footer__column">
-							<h3 class="footer__column-title">Company</h3>
-							<ul class="footer__list">
-								<li class="footer__item"><a href="" class="footer__link">About Us</a></li>
-								<li class="footer__item"><a href="" class="footer__link">Blog</a></li>
-								<li class="footer__item"><a href="" class="footer__link">Customers</a></li>
-								<li class="footer__item"><a href="" class="footer__link">Packages</a></li>
-								<li class="footer__item"><a href="" class="footer__link">Community</a></li>
-							</ul>
+						<div class="store__info">
+							<span class="footer__logo"> 3legant<span class="dot">.</span> </span>
+							<span class="footer__store-desc">Headphone Store</span>
 						</div>
-
-						<!-- COLUMN 2 -->
-						<div class="footer__column">
-							<h3 class="footer__column-title">Help</h3>
-							<ul class="footer__list">
-								<li class="footer__item"><a href="" class="footer__link">Support</a></li>
-								<li class="footer__item"><a href="" class="footer__link">FAQs</a></li>
-								<li class="footer__item"><a href="" class="footer__link">Refund Policy</a></li>
-							</ul>
-						</div>
+						<ul class="nav__items">
+							<li>
+								<a href="">Home</a>
+							</li>
+							<li>
+								<a href="">Shop</a>
+							</li>
+							<li>
+								<a href="">Product</a>
+							</li>
+							<li>
+								<a href="">Blog</a>
+							</li>
+							<li>
+								<a href="">Contact Us</a>
+							</li>
+						</ul>
 					</nav>
+					<div class="footer__credits">
+						<div class="copyright">
+							<span class="copyright-disclaimer">
+								Copyright &#169; 2023 3legant. All rights reserved
+							</span>
+							<div class="policy">
+								<a href="" class="privacy-policy">Privacy Policy</a>
+								<a href="" class="terms-of-use">Terms of&#160;Use</a>
+							</div>
+						</div>
+						<div class="social">
+							<a href="">
+								<img src="./img/footer/instagram.svg" alt="" />
+							</a>
+							<a href="">
+								<img src="./img/footer/facebook (1).svg" alt="" />
+							</a>
+							<a href="">
+								<img src="./img/footer/youtube (1).svg" alt="" />
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
+
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

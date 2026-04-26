@@ -11,15 +11,15 @@
 	height: 24px;
 }
 
-.icon--logo{
-	width:121px;
-	fill: var(--accent);
-	@include laptop {
-			scale: (1.2);
-			transform-origin: left;
-		}
-}
 
+.like-btn--off{
+	width: 32px;
+	height: 32px;
+}
+.like-btn--on{
+	width: 32px;
+	height: 32px;
+}
 .icon--search {
 	stroke: white;
 	

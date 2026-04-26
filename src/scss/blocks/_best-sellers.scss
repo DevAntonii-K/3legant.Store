@@ -1,0 +1,147 @@
+.best-sellers {
+    padding: 48px 0 100px 0;
+    
+    a{
+        color: var(--main-text-color);
+    }
+}
+@media (max-width: 376px) {
+  .best-sellers{
+    padding:40px 32px;
+  }
+}
+
+
+.best-sellers__container{
+    width: 1120px;
+    margin: 0 auto;
+    display: flex; 
+    gap: 48px;
+    flex-direction: column;
+}
+@media (max-width: 376px) {
+  .best-sellers__container{
+    max-width: 311px;
+    gap: 16px;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.best-sellers__title{
+    font-family: var(--font-secondary);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    @include mobile {
+        font-size: 34px;
+    }
+}
+.best-sellers__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+@media (max-width: 376px) {
+.best-sellers__list{
+    column-gap: 7px;
+    row-gap: 16px;
+}
+}
+
+.best-seller__item-card {
+    width: 262px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+@media (max-width: 376px) {
+.best-seller__item-card{
+    width: 152px;
+      
+}
+}
+// ------------------------------
+
+.best-seller__main {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.best-seller__badge {
+    width: 67px;
+    height: 24px;
+
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 4px;
+    padding: 4px 14px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.best-seller__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+@media (max-width: 376px) {
+  .best-seller__desc{
+    height:68px;
+
+  }
+  
+}
+
+.best-seller__item-rating {
+    width: 88px;
+    height: 16px;
+}
+
+.best-seller__item-name {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0;
+}
+@media (max-width: 376px) {
+    .best-seller__item-name{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0px;
+    }
+}
+
+.best-seller__price {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0;
+}
+
+
+.item--elipsis{
+    @media (max-width: 376px) {
+    white-space: nowrap;
+        /* Текст в один рядок */
+        overflow: hidden;
+        /* Ховаємо те, що не влізло */
+        text-overflow: ellipsis;
+        /* Малюємо три крапки */
+    
+        br {
+            display: none;
+        }
+    }
+}

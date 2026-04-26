@@ -2,22 +2,18 @@
 	--container-width: 1230px;
 	--container-padding: 15px;
 
-	--font-main: 'Alexandria', sans-serif;
-	--font-accent: 'Manrope', sans-serif;
-	--font-titles: var(--font-accent);
-
-	--page-bg: #fff;
-	--main-text-color: #181818;
-	--secondary-text-color:#909090;
-	--accent: #35AFF4;
-	
+	--font-main: 'Inter', sans-serif;
+	--font-secondary: 'Poppins', sans-serif;
+	--font-accent: 'Space Grotesk', sans-serif;
 
 
-    --laptop-size: 1229px;
-	--tablet-size: 1023px;
-	--mobile-size: 819px;
-
-	
+	--page-bg: #E2E4E3;
+	--main-bg: rgba(255, 171, 0, 0.64);
+	--main-text-color: #141718;
+	--accent: #377DFF;
+	--white-accent: #FEFEFE;
+	--grey-accent: #E8ECEF;
+	--text-color-yellow: #FFAB00;
 }
 
 .dark {

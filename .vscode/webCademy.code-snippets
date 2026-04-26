@@ -37,6 +37,18 @@
 		"description": "tablet-landscape"
 	},
 
+	/* Nav Mobile Mode*/
+	"navMobileMode": {
+		"scope": "css,scss",
+		"prefix": "nav-mobile-mode",
+		"body": [
+			"@include nav-mobile-mode {",
+			"    ${1}",
+			"}"
+		],
+		"description": "nav-mobile-mode"
+	},
+
 	/* Media Tablet */
 	"mediaTablet": {
 		"scope": "css,scss",
