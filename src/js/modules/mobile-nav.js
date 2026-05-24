@@ -1,26 +1,26 @@
 export default function mobileNav() {
 
   const burger = document.querySelector('.burger');
-  const menu = document.querySelector('.mobile__menu');
-  const overlay = document.querySelector('.mobile__overlay');
-  const closeBtn = document.querySelector('.mobile__menu-close-icon');
+  const menu = document.querySelector('.nav__drawer');
+  const overlay = document.querySelector('.nav__overlay');
+  const closeBtn = document.querySelector('.nav__drawer-close');
 
   if (!burger || !menu || !overlay || !closeBtn) return;
 
   
   burger.addEventListener('click', () => {
-    menu.classList.add('--open');
-    overlay.classList.add('--open');
-    document.body.classList.add('menu-open');
+    menu.classList.add('nav__drawer--open');
+    overlay.classList.add('nav__overlay--open');
+    document.body.classList.add('lock');
   });
 
   overlay.addEventListener('click', closeMenu);
   closeBtn.addEventListener('click', closeMenu);
 
   function closeMenu() {
-    menu.classList.remove('--open');
-    overlay.classList.remove('--open');
-    document.body.classList.remove('menu-open');
+    menu.classList.remove('nav__drawer--open');
+    overlay.classList.remove('nav__overlay--open');
+    document.body.classList.remove('lock');
   }
 }
 

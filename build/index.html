@@ -40,48 +40,50 @@
 		</div>
 
 		<nav class="nav">
-			<!-- DESKTOP MENU -->
 			<div class="nav__container">
+				<!-- DESKTOP MENU -->
 				<div class="nav__logo">
-					<!-- Burger button (mobile only) -->
+					<!-- BURGER BUTTON (MOBILE) -->
 					<button class="burger" aria-label="Open menu">
 						<span></span>
 						<span></span>
 						<span></span>
 					</button>
-					<!-- Mobile menu -->
-					<ul class="nav__mobile">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Shop</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
 					<h2>3legant.</h2>
 				</div>
 
-				<div class="nav__list">
-					<ul>
-						<li>Home</li>
-						<li>Shop</li>
-						<li>Product</li>
-						<li>Contact Us</li>
+				<div class="nav__list-wrapper">
+					<ul class="nav__list">
+						<li>
+							<a href="">Home</a>
+						</li>
+						<li>
+							<a href="">Shop</a>
+						</li>
+						<li>
+							<a href="">Product</a>
+						</li>
+						<li>
+							<a href="">Contact Us</a>
+						</li>
 					</ul>
 				</div>
 
 				<div class="nav__user-tools">
-					<a class="user-tools__search" href="">
+					<a class="nav__user-tool nav__user-tool--search" href="">
 						<img src="./img/tagline/search 02.svg" alt="" />
 					</a>
 
-					<a class="user-tools__account" href="">
+					<a class="nav__user-tool nav__user-tool--account" href="">
 						<img src="./img/tagline/user-circle.svg" alt="" />
 					</a>
 
-					<div class="user-tools__bag">
-						<a class="__bag" href="">
+					<div class="nav__bag-wrapper">
+						<a class="nav__user-tool nav__user-tool--bag" href="">
 							<img src="./img/tagline/shopping bag.svg" alt="" />
 						</a>
 
-						<a class="user-tools__notification" href="">
+						<a class="nav__user-tool nav__user-tool--notification" href="">
 							<picture>
 								<source srcset="./img/nav/ellipse.webp 1x, ./img/nav/ellipse@2x.webp 2x" type="image/webp" />
 								<source srcset="./img/nav/ellipse.png 1x, ./img/nav/ellipse@2x.png 2x" type="image/png" />
@@ -93,19 +95,19 @@
 				</div>
 			</div>
 
-			<!-- OPENED MOBILE MENU -->
-			<div class="mobile__menu">
-				<div class="mobile__menu-content">
-					<div class="mobile__menu-main">
-						<div class="mobile__menu-header">
-							<h2 class="mobile__menu-logo">3legant<span>.</span></h2>
+			<!-- NAV DRAWER -->
+			<div class="nav__drawer">
+				<div class="nav__drawer-content">
+					<div class="nav__drawer-main">
+						<div class="nav__drawer-header">
+							<h2 class="nav__drawer-logo">3legant<span>.</span></h2>
 
-							<div class="mobile__menu-close-icon">
+							<div class="nav__drawer-close">
 								<img src="./img/mobile-nav/Line.svg" alt="" />
 							</div>
 						</div>
 
-						<div class="mobile__menu-search-field">
+						<div class="nav__drawer-search">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M18.5 18.5L22 22M21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21C16.7467 21 21 16.7467 21 11.5Z"
@@ -118,37 +120,37 @@
 							<input type="text" placeholder="Search" />
 						</div>
 
-						<ul class="mobile__menu-list">
-							<li class="mobile__menu-item">
+						<ul class="nav__drawer-list">
+							<li class="nav__drawer-item">
 								<a href="">Home</a>
 							</li>
-							<li class="mobile__menu-item">
+							<li class="nav__drawer-item">
 								<a href="">Shop</a>
 							</li>
-							<li class="mobile__menu-item">
+							<li class="nav__drawer-item">
 								<a href="">Product</a>
 							</li>
-							<li class="mobile__menu-item">
+							<li class="nav__drawer-item">
 								<a href="">Contact</a>
 							</li>
 						</ul>
 					</div>
 
-					<div class="mobile__menu-footer">
-						<ul class="mobile__user-tools">
-							<li class="mobile__cart">
+					<div class="nav__drawer-footer">
+						<ul class="nav__drawer-tools">
+							<li class="nav__drawer-cart">
 								<a href="">Cart</a>
 								<img src="./img/mobile-nav/shopping bag.png" alt="" />
 							</li>
-							<li class="mobile__wishlist">
+							<li class="nav__drawer-wishlist">
 								<a href="">Wishlist</a>
 								<img src="./img/mobile-nav/heart.svg" alt="" />
 							</li>
 						</ul>
-						<button class="mobile__menu-btn">
+						<button class="nav__drawer-btn">
 							Sign In
 						</button>
-						<div class="mobile__menu-socials">
+						<div class="nav__drawer-socials">
 							<a href=""><img src="./img/mobile-nav/instagram.svg" alt=""/></a>
 							<a href=""><img src="./img/mobile-nav/facebook (1).svg" alt=""/></a>
 							<a href=""><img src="./img/mobile-nav/youtube.svg" alt=""/></a>
@@ -156,8 +158,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="mobile__overlay"></div>
-			<!-- OPENED  MOBILE MENU END -->
+			<div class="nav__overlay"></div>
 		</nav>
 		<!-- header -->
 		<header class="hero">
@@ -171,7 +172,7 @@
 						<p>Experience music like never before</p>
 					</div>
 
-					<div class="hero__btn_wrapper">
+					<div class="hero__btn-wrapper">
 						<button class="hero__btn">Shopping Now</button>
 					</div>
 				</div>
@@ -193,20 +194,13 @@
 									<div class="slider__badge">
 										NEW
 									</div>
-									<img
-										class="slider__like-btn"
-										src="./img/new_arrivals/add-to-wishlist.png"
-										data-off="../../img/new_arrivals/add-to-wishlist.png"
-										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
-										data-state="off"
-										alt=""
-									/>
+									<img class="slider__like-btn" src="./img/new_arrivals/add-to-wishlist.png" alt="" />
 									<picture>
 										<source srcset="./img/new_arrivals/01.webp 1x, ./img/new_arrivals/01@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/new_arrivals/01.jpg 1x, ./img/new_arrivals/01@2x.jpg 2x" type="image/jpeg" />
 										<img src="./img/new_arrivals/01.jpg" alt="" />
 									</picture>
-									<button class="add-to-cart-btn">
+									<button class="slider__add-btn">
 										Add to&#160;cart
 									</button>
 								</div>
@@ -225,19 +219,13 @@
 									<div class="slider__badge">
 										NEW
 									</div>
-									<img
-										class="slider__like-btn"
-										src="./img/new_arrivals/add-to-wishlist.png"
-										data-off="../../img/new_arrivals/add-to-wishlist.png"
-										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
-										alt=""
-									/>
+									<img class="slider__like-btn" src="./img/new_arrivals/add-to-wishlist.png" alt="" />
 									<picture>
 										<source srcset="./img/new_arrivals/02.webp 1x, ./img/new_arrivals/02@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/new_arrivals/02.jpg 1x, ./img/new_arrivals/02@2x.jpg 2x" type="image/jpeg" />
 										<img src="./img/new_arrivals/02.jpg" alt="" />
 									</picture>
-									<button class="add-to-cart-btn">
+									<button class="slider__add-btn">
 										Add to&#160;cart
 									</button>
 								</div>
@@ -255,19 +243,13 @@
 									<div class="slider__badge">
 										NEW
 									</div>
-									<img
-										class="slider__like-btn"
-										src="./img/new_arrivals/add-to-wishlist.png"
-										data-off="../../img/new_arrivals/add-to-wishlist.png"
-										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
-										alt=""
-									/>
+									<img class="slider__like-btn" src="./img/new_arrivals/add-to-wishlist.png" alt="" />
 									<picture>
 										<source srcset="./img/new_arrivals/03.webp 1x, ./img/new_arrivals/03@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/new_arrivals/03.jpg 1x, ./img/new_arrivals/03@2x.jpg 2x" type="image/jpeg" />
 										<img src="./img/new_arrivals/03.jpg" alt="" />
 									</picture>
-									<button class="add-to-cart-btn">
+									<button class="slider__add-btn">
 										Add to&#160;cart
 									</button>
 								</div>
@@ -285,19 +267,13 @@
 									<div class="slider__badge">
 										NEW
 									</div>
-									<img
-										class="slider__like-btn"
-										src="./img/new_arrivals/add-to-wishlist.png"
-										data-off="../../img/new_arrivals/add-to-wishlist.png"
-										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
-										alt=""
-									/>
+									<img class="slider__like-btn" src="./img/new_arrivals/add-to-wishlist.png" alt="" />
 									<picture>
 										<source srcset="./img/new_arrivals/04.webp 1x, ./img/new_arrivals/04@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/new_arrivals/04.jpg 1x, ./img/new_arrivals/04@2x.jpg 2x" type="image/jpeg" />
 										<img src="./img/new_arrivals/04.jpg" alt="" />
 									</picture>
-									<button class="add-to-cart-btn">
+									<button class="slider__add-btn">
 										Add to&#160;cart
 									</button>
 								</div>
@@ -315,19 +291,13 @@
 									<div class="slider__badge">
 										NEW
 									</div>
-									<img
-										class="slider__like-btn"
-										src="./img/new_arrivals/add-to-wishlist.png"
-										data-off="../../img/new_arrivals/add-to-wishlist.png"
-										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
-										alt=""
-									/>
+									<img class="slider__like-btn" src="./img/new_arrivals/add-to-wishlist.png" alt="" />
 									<picture>
 										<source srcset="./img/new_arrivals/01.webp 1x, ./img/new_arrivals/01@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/new_arrivals/01.jpg 1x, ./img/new_arrivals/01@2x.jpg 2x" type="image/jpeg" />
 										<img src="./img/new_arrivals/01.jpg" alt="" />
 									</picture>
-									<button class="add-to-cart-btn">
+									<button class="slider__add-btn">
 										Add to&#160;cart
 									</button>
 								</div>
@@ -346,19 +316,13 @@
 									<div class="slider__badge">
 										NEW
 									</div>
-									<img
-										class="slider__like-btn"
-										src="./img/new_arrivals/add-to-wishlist.png"
-										data-off="../../img/new_arrivals/add-to-wishlist.png"
-										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
-										alt=""
-									/>
+									<img class="slider__like-btn" src="./img/new_arrivals/add-to-wishlist.png" alt="" />
 									<picture>
 										<source srcset="./img/new_arrivals/02.webp 1x, ./img/new_arrivals/02@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/new_arrivals/02.jpg 1x, ./img/new_arrivals/02@2x.jpg 2x" type="image/jpeg" />
 										<img src="./img/new_arrivals/02.jpg" alt="" />
 									</picture>
-									<button class="add-to-cart-btn">
+									<button class="slider__add-btn">
 										Add to&#160;cart
 									</button>
 								</div>
@@ -376,19 +340,13 @@
 									<div class="slider__badge">
 										NEW
 									</div>
-									<img
-										class="slider__like-btn"
-										src="./img/new_arrivals/add-to-wishlist.png"
-										data-off="../../img/new_arrivals/add-to-wishlist.png"
-										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
-										alt=""
-									/>
+									<img class="slider__like-btn" src="./img/new_arrivals/add-to-wishlist.png" alt="" />
 									<picture>
 										<source srcset="./img/new_arrivals/03.webp 1x, ./img/new_arrivals/03@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/new_arrivals/03.jpg 1x, ./img/new_arrivals/03@2x.jpg 2x" type="image/jpeg" />
 										<img src="./img/new_arrivals/03.jpg" alt="" />
 									</picture>
-									<button class="add-to-cart-btn">
+									<button class="slider__add-btn">
 										Add to&#160;cart
 									</button>
 								</div>
@@ -406,19 +364,13 @@
 									<div class="slider__badge">
 										NEW
 									</div>
-									<img
-										class="slider__like-btn"
-										src="./img/new_arrivals/add-to-wishlist.png"
-										data-off="../../img/new_arrivals/add-to-wishlist.png"
-										data-on="../../img/new_arrivals/add-to-wishlist-on.png"
-										alt=""
-									/>
+									<img class="slider__like-btn" src="./img/new_arrivals/add-to-wishlist.png" alt="" />
 									<picture>
 										<source srcset="./img/new_arrivals/04.webp 1x, ./img/new_arrivals/04@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/new_arrivals/04.jpg 1x, ./img/new_arrivals/04@2x.jpg 2x" type="image/jpeg" />
 										<img src="./img/new_arrivals/04.jpg" alt="" />
 									</picture>
-									<button class="add-to-cart-btn">
+									<button class="slider__add-btn">
 										Add to&#160;cart
 									</button>
 								</div>
@@ -440,66 +392,65 @@
 				<div class="shop-collections__container">
 					<h2 class="shop-collections__title">Shop Collection</h2>
 					<div class="shop-collections__grid">
-						<div class="collections__card shop-collection__card--large">
+						<a class="shop-collections__card shop-collections__card--large">
 							<picture>
 								<source srcset="./img/shop-collections/headbands.webp 1x, ./img/shop-collections/headbands@2x.webp 2x" type="image/webp" />
 								<source srcset="./img/shop-collections/headbands.jpg 1x, ./img/shop-collections/headbands@2x.jpg 2x" type="image/jpeg" />
-								<img class="collections__desktop-img" src="./img/shop-collections/headbands.jpg" alt="" />
+								<img class="shop-collections__desktop-img" src="./img/shop-collections/headbands.jpg" alt="" />
 							</picture>
 							<picture>
 								<source srcset="./img/shop-collections/headbands-mob.webp 1x, ./img/shop-collections/headbands-mob@2x.webp 2x" type="image/webp" />
 								<source srcset="./img/shop-collections/headbands-mob.png 1x, ./img/shop-collections/headbands-mob@2x.png 2x" type="image/png" />
-								<img class="collections__mobile-img" src="./img/shop-collections/headbands-mob.png" />
+								<img class="shop-collections__mobile-img" src="./img/shop-collections/headbands-mob.png" />
 							</picture>
-							<div class="collections__card-desc">
+							<div class="shop-collections__card-desc">
 								<h3>Headband</h3>
-								<a href=""
+								<span
 									>Collection
 									<img src="./img/shop-collections/arrow-right.svg" alt="" />
-								</a>
+								</span>
 							</div>
-						</div>
-						<div class="collections__column">
-							<div class="collections__card shop-collection__card--small">
-								<picture>
-									<source srcset="./img/shop-collections/earbuds.webp 1x, ./img/shop-collections/earbuds@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/shop-collections/earbuds.jpg 1x, ./img/shop-collections/earbuds@2x.jpg 2x" type="image/jpeg" />
-									<img class="collections__desktop-img" src="./img/shop-collections/earbuds.jpg" alt="" />
-								</picture>
-								<picture>
-									<source srcset="./img/shop-collections/earbuds-mob.webp 1x, ./img/shop-collections/earbuds-mob@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/shop-collections/earbuds-mob.png 1x, ./img/shop-collections/earbuds-mob@2x.png 2x" type="image/png" />
-									<img class="collections__mobile-img" src="./img/shop-collections/earbuds-mob.png" />
-								</picture>
-								<div class="collections__card-desc--small">
-									<h3>Earbuds</h3>
-									<a href=""
-										>Collection
-										<img src="./img/shop-collections/arrow-right.svg" alt="" />
-									</a>
-								</div>
-							</div>
+						</a>
 
-							<div class="collections__card shop-collection__card--small">
-								<picture>
-									<source srcset="./img/shop-collections/accesories.webp 1x, ./img/shop-collections/accesories@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/shop-collections/accesories.jpg 1x, ./img/shop-collections/accesories@2x.jpg 2x" type="image/jpeg" />
-									<img class="collections__desktop-img" src="./img/shop-collections/accesories.jpg" alt="" />
-								</picture>
-								<picture>
-									<source srcset="./img/shop-collections/accesories-mob.webp 1x, ./img/shop-collections/accesories-mob@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/shop-collections/accesories-mob.png 1x, ./img/shop-collections/accesories-mob@2x.png 2x" type="image/png" />
-									<img class="collections__mobile-img" src="./img/shop-collections/accesories-mob.png" />
-								</picture>
-								<div class="collections__card-desc--small">
-									<h3>Accessories</h3>
-									<a href=""
-										>Collection
-										<img src="./img/shop-collections/arrow-right.svg" alt="" />
-									</a>
-								</div>
+						<a class="shop-collections__card shop-collections__card--small">
+							<picture>
+								<source srcset="./img/shop-collections/earbuds.webp 1x, ./img/shop-collections/earbuds@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/shop-collections/earbuds.jpg 1x, ./img/shop-collections/earbuds@2x.jpg 2x" type="image/jpeg" />
+								<img class="shop-collections__desktop-img" src="./img/shop-collections/earbuds.jpg" alt="" />
+							</picture>
+							<picture>
+								<source srcset="./img/shop-collections/earbuds-mob.webp 1x, ./img/shop-collections/earbuds-mob@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/shop-collections/earbuds-mob.png 1x, ./img/shop-collections/earbuds-mob@2x.png 2x" type="image/png" />
+								<img class="shop-collections__mobile-img" src="./img/shop-collections/earbuds-mob.png" />
+							</picture>
+							<div class="shop-collections__card-desc shop-collections__card-desc--small">
+								<h3>Earbuds</h3>
+								<span
+									>Collection
+									<img src="./img/shop-collections/arrow-right.svg" alt="" />
+								</span>
 							</div>
-						</div>
+						</a>
+
+						<a class="shop-collections__card shop-collection__card--small">
+							<picture>
+								<source srcset="./img/shop-collections/accesories.webp 1x, ./img/shop-collections/accesories@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/shop-collections/accesories.jpg 1x, ./img/shop-collections/accesories@2x.jpg 2x" type="image/jpeg" />
+								<img class="shop-collections__desktop-img" src="./img/shop-collections/accesories.jpg" alt="" />
+							</picture>
+							<picture>
+								<source srcset="./img/shop-collections/accesories-mob.webp 1x, ./img/shop-collections/accesories-mob@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/shop-collections/accesories-mob.png 1x, ./img/shop-collections/accesories-mob@2x.png 2x" type="image/png" />
+								<img class="shop-collections__mobile-img" src="./img/shop-collections/accesories-mob.png" />
+							</picture>
+							<div class="shop-collections__card-desc shop-collections__card-desc--small">
+								<h3>Accessories</h3>
+								<span
+									>Collection
+									<img src="./img/shop-collections/arrow-right.svg" alt="" />
+								</span>
+							</div>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -510,194 +461,194 @@
 					</h2>
 					<ul class="best-sellers__list">
 						<!-- CARD 01 -->
-						<li class="best-seller__item-card">
+						<li class="best-sellers__item-card">
 							<a href="">
-								<div class="best-seller__main">
-									<div class="best-seller__badge">
+								<div class="best-sellers__main">
+									<div class="best-sellers__badge">
 										HOT
 									</div>
 									<picture>
 										<source srcset="./img/best-sellers/01.webp 1x, ./img/best-sellers/01@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/best-sellers/01.jpg 1x, ./img/best-sellers/01@2x.jpg 2x" type="image/jpeg" />
-										<img src="./img/best-sellers/01.jpg" alt="" />
+										<img class="best-sellers__img" src="./img/best-sellers/01.jpg" alt="" />
 									</picture>
 								</div>
 
-								<div class="best-seller__desc">
-									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
-									<h3 class="best-seller__item-name item--elipsis">
+								<div class="best-sellers__desc">
+									<img class="best-sellers__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-sellers__item-name item--elipsis">
 										Skullcandy&#160;&#8212; Crusher anc 2 wireless headphones
 									</h3>
-									<span class="best-seller__price">$299.99</span>
+									<span class="best-sellers__price">$299.99</span>
 								</div>
 							</a>
 						</li>
 						<!-- CARD 02 -->
-						<li class="best-seller__item-card">
+						<li class="best-sellers__item-card">
 							<a href="">
-								<div class="best-seller__main">
-									<div class="best-seller__badge">
+								<div class="best-sellers__main">
+									<div class="best-sellers__badge">
 										HOT
 									</div>
 									<picture>
 										<source srcset="./img/best-sellers/02.webp 1x, ./img/best-sellers/02@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/best-sellers/02.jpg 1x, ./img/best-sellers/02@2x.jpg 2x" type="image/jpeg" />
-										<img src="./img/best-sellers/02.jpg" alt="" />
+										<img class="best-sellers__img" src="./img/best-sellers/02.jpg" alt="" />
 									</picture>
 								</div>
 
-								<div class="best-seller__desc">
-									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
-									<h3 class="best-seller__item-name item--elipsis">
+								<div class="best-sellers__desc">
+									<img class="best-sellers__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-sellers__item-name item--elipsis">
 										Beats
 										<br />
 										Studio Pro
 									</h3>
-									<span class="best-seller__price">$349.99</span>
+									<span class="best-sellers__price">$349.99</span>
 								</div>
 							</a>
 						</li>
 						<!-- CARD 03 -->
-						<li class="best-seller__item-card">
+						<li class="best-sellers__item-card">
 							<a href="">
-								<div class="best-seller__main">
-									<div class="best-seller__badge">
+								<div class="best-sellers__main">
+									<div class="best-sellers__badge">
 										HOT
 									</div>
 									<picture>
 										<source srcset="./img/best-sellers/03.webp 1x, ./img/best-sellers/03@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/best-sellers/03.jpg 1x, ./img/best-sellers/03@2x.jpg 2x" type="image/jpeg" />
-										<img src="./img/best-sellers/03.jpg" alt="" />
+										<img class="best-sellers__img" src="./img/best-sellers/03.jpg" alt="" />
 									</picture>
 								</div>
 
-								<div class="best-seller__desc">
-									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
-									<h3 class="best-seller__item-name item--elipsis">
+								<div class="best-sellers__desc">
+									<img class="best-sellers__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-sellers__item-name item--elipsis">
 										Sony&#160;&#8212; WH-CH720N Wireless Noise Canceling
 									</h3>
-									<span class="best-seller__price">$149.99</span>
+									<span class="best-sellers__price">$149.99</span>
 								</div>
 							</a>
 						</li>
 						<!-- CARD 04 -->
-						<li class="best-seller__item-card">
+						<li class="best-sellers__item-card">
 							<a href="">
-								<div class="best-seller__main">
-									<div class="best-seller__badge">
+								<div class="best-sellers__main">
+									<div class="best-sellers__badge">
 										HOT
 									</div>
 									<picture>
 										<source srcset="./img/best-sellers/04.webp 1x, ./img/best-sellers/04@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/best-sellers/04.jpg 1x, ./img/best-sellers/04@2x.jpg 2x" type="image/jpeg" />
-										<img src="./img/best-sellers/04.jpg" alt="" />
+										<img class="best-sellers__img" src="./img/best-sellers/04.jpg" alt="" />
 									</picture>
 								</div>
 
-								<div class="best-seller__desc">
-									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
-									<h3 class="best-seller__item-name item--elipsis">
+								<div class="best-sellers__desc">
+									<img class="best-sellers__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-sellers__item-name item--elipsis">
 										Skullcandy&#160;&#8212; Rail True Wireless Earbuds
 									</h3>
-									<span class="best-seller__price">$79.99</span>
+									<span class="best-sellers__price">$79.99</span>
 								</div>
 							</a>
 						</li>
 						<!-- CARD 05 -->
-						<li class="best-seller__item-card">
+						<li class="best-sellers__item-card">
 							<a href=""
-								><div class="best-seller__main">
-									<div class="best-seller__badge">
+								><div class="best-sellers__main">
+									<div class="best-sellers__badge">
 										HOT
 									</div>
 									<picture>
 										<source srcset="./img/best-sellers/05.webp 1x, ./img/best-sellers/05@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/best-sellers/05.jpg 1x, ./img/best-sellers/05@2x.jpg 2x" type="image/jpeg" />
-										<img src="./img/best-sellers/05.jpg" alt="" />
+										<img class="best-sellers__img" src="./img/best-sellers/05.jpg" alt="" />
 									</picture>
 								</div>
 
-								<div class="best-seller__desc">
-									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
-									<h3 class="best-seller__item-name item--elipsis">
+								<div class="best-sellers__desc">
+									<img class="best-sellers__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-sellers__item-name item--elipsis">
 										Beats
 										<br />
 										Studio Pro
 									</h3>
-									<span class="best-seller__price">$249.99</span>
+									<span class="best-sellers__price">$249.99</span>
 								</div>
 							</a>
 						</li>
 						<!-- CARD 06 -->
-						<li class="best-seller__item-card">
+						<li class="best-sellers__item-card">
 							<a href="">
-								<div class="best-seller__main">
-									<div class="best-seller__badge">
+								<div class="best-sellers__main">
+									<div class="best-sellers__badge">
 										HOT
 									</div>
 									<picture>
 										<source srcset="./img/best-sellers/06.webp 1x, ./img/best-sellers/06@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/best-sellers/06.jpg 1x, ./img/best-sellers/06@2x.jpg 2x" type="image/jpeg" />
-										<img src="./img/best-sellers/06.jpg" alt="" />
+										<img class="best-sellers__img" src="./img/best-sellers/06.jpg" alt="" />
 									</picture>
 								</div>
 
-								<div class="best-seller__desc">
-									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
-									<h3 class="best-seller__item-name item--elipsis">
+								<div class="best-sellers__desc">
+									<img class="best-sellers__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-sellers__item-name item--elipsis">
 										JBL Reflect Flow Pro+ Bluetooth Truly Wireless Sports
 									</h3>
-									<span class="best-seller__price">$179.95</span>
+									<span class="best-sellers__price">$179.95</span>
 								</div>
 							</a>
 						</li>
 						<!-- CARD 07 -->
-						<li class="best-seller__item-card">
+						<li class="best-sellers__item-card">
 							<a href="">
-								<div class="best-seller__main">
-									<div class="best-seller__badge">
+								<div class="best-sellers__main">
+									<div class="best-sellers__badge">
 										HOT
 									</div>
 									<picture>
 										<source srcset="./img/best-sellers/07.webp 1x, ./img/best-sellers/07@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/best-sellers/07.jpg 1x, ./img/best-sellers/07@2x.jpg 2x" type="image/jpeg" />
-										<img src="./img/best-sellers/07.jpg" alt="" />
+										<img class="best-sellers__img" src="./img/best-sellers/07.jpg" alt="" />
 									</picture>
 								</div>
 
-								<div class="best-seller__desc">
-									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
-									<h3 class="best-seller__item-name item--elipsis">
+								<div class="best-sellers__desc">
+									<img class="best-sellers__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-sellers__item-name item--elipsis">
 										Bose
 										<br />
 										QuietComfort Headphones
 									</h3>
-									<span class="best-seller__price">$349.00</span>
+									<span class="best-sellers__price">$349.00</span>
 								</div>
 							</a>
 						</li>
 						<!-- CARD 08 -->
-						<li class="best-seller__item-card">
+						<li class="best-sellers__item-card">
 							<a href="">
-								<div class="best-seller__main">
-									<div class="best-seller__badge">
+								<div class="best-sellers__main">
+									<div class="best-sellers__badge">
 										HOT
 									</div>
 									<picture>
 										<source srcset="./img/best-sellers/08.webp 1x, ./img/best-sellers/08@2x.webp 2x" type="image/webp" />
 										<source srcset="./img/best-sellers/08.jpg 1x, ./img/best-sellers/08@2x.jpg 2x" type="image/jpeg" />
-										<img src="./img/best-sellers/08.jpg" alt="" />
+										<img class="best-sellers__img" src="./img/best-sellers/08.jpg" alt="" />
 									</picture>
 								</div>
 
-								<div class="best-seller__desc">
-									<img class="best-seller__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
-									<h3 class="best-seller__item-name item--elipsis">
+								<div class="best-sellers__desc">
+									<img class="best-sellers__item-rating" src="./img/best-sellers/Rating Group.png" alt="" />
+									<h3 class="best-sellers__item-name item--elipsis">
 										AKG
 										<br />
 										Y600NC Wireless
 									</h3>
-									<span class="best-seller__price">$349.99</span>
+									<span class="best-sellers__price">$349.99</span>
 								</div>
 							</a>
 						</li>
@@ -718,32 +669,32 @@
 							<img class="discount__mobile-img" src="./img/discount/promotion-mob.jpg" alt="" />
 						</picture>
 
-						<div class="discount__offer-block">
+						<div class="discount__offer">
 							<div class="offer__desc">
 								<span>pROMOTION</span>
 								<h2>Hurry up! 40% OFF</h2>
 								<p>Thousands of&#160;high tech are waiting for you</p>
 							</div>
 
-							<div class="offer__countdown-timer">
+							<div class="discount__timer">
 								<p>Offer expires in:</p>
 
-								<div class="countdown-timer">
-									<div class="timer-unit">
-										<span id="days" class="timer-value">02</span>
-										<span class="timer-label">Days</span>
+								<div class="timer">
+									<div class="timer__unit">
+										<span id="days" class="timer__value">02</span>
+										<span class="timer__label">Days</span>
 									</div>
-									<div class="timer-unit">
-										<span id="hours" class="timer-value">12</span>
-										<span class="timer-label">Hours</span>
+									<div class="timer__unit">
+										<span id="hours" class="timer__value">12</span>
+										<span class="timer__label">Hours</span>
 									</div>
-									<div class="timer-unit">
-										<span id="minutes" class="timer-value">45</span>
-										<span class="timer-label">Minutes</span>
+									<div class="timer__unit">
+										<span id="minutes" class="timer__value">45</span>
+										<span class="timer__label">Minutes</span>
 									</div>
-									<div class="timer-unit">
-										<span id="seconds" class="timer-value">05</span>
-										<span class="timer-label">Seconds</span>
+									<div class="timer__unit">
+										<span id="seconds" class="timer__value">05</span>
+										<span class="timer__label">Seconds</span>
 									</div>
 								</div>
 							</div>
@@ -758,34 +709,34 @@
 
 			<section class="features">
 				<div class="features__container">
-					<div class="features__block">
-						<ul class="features-list">
-							<li class="feature">
+					<div class="features__content">
+						<ul class="features__list">
+							<li class="feature__item">
 								<img src="./img/features/shipping.svg" alt="" />
 								<div class="feature__desc">
 									<h3>Free Shipping</h3>
 									<span>Order above $200</span>
 								</div>
 							</li>
-							<li class="feature">
+							<li class="feature__item">
 								<img src="./img/features/finance.svg" alt="" />
 								<div class="feature__desc">
-									<h3>Free Shipping</h3>
-									<span>Order above $200</span>
+									<h3>Money-back</h3>
+									<span>30 days guarantee</span>
 								</div>
 							</li>
-							<li class="feature">
+							<li class="feature__item">
 								<img src="./img/features/lock.svg" alt="" />
 								<div class="feature__desc">
-									<h3>Free Shipping</h3>
-									<span>Order above $200</span>
+									<h3>Secure Payments</h3>
+									<span>Secured by&#160;Stripe</span>
 								</div>
 							</li>
-							<li class="feature">
+							<li class="feature__item">
 								<img src="./img/features/call.svg" alt="" />
 								<div class="feature__desc">
-									<h3>Free Shipping</h3>
-									<span>Order above $200</span>
+									<h3>24/7 Support</h3>
+									<span>Phone and Email support</span>
 								</div>
 							</li>
 						</ul>
@@ -814,11 +765,11 @@
 			<div class="footer__container">
 				<div class="footer__content">
 					<nav class="footer__nav">
-						<div class="store__info">
-							<span class="footer__logo"> 3legant<span class="dot">.</span> </span>
-							<span class="footer__store-desc">Headphone Store</span>
+						<div class="footer__info">
+							<span class="footer__logo"> 3legant<span class="footer__dot">.</span> </span>
+							<span class="footer__desc">Headphone Store</span>
 						</div>
-						<ul class="nav__items">
+						<ul class="footer__nav-list">
 							<li>
 								<a href="">Home</a>
 							</li>
@@ -837,24 +788,30 @@
 						</ul>
 					</nav>
 					<div class="footer__credits">
-						<div class="copyright">
-							<span class="copyright-disclaimer">
+						<div class="footer__copyright">
+							<span class="footer__disclaimer">
 								Copyright &#169; 2023 3legant. All rights reserved
 							</span>
-							<div class="policy">
-								<a href="" class="privacy-policy">Privacy Policy</a>
-								<a href="" class="terms-of-use">Terms of&#160;Use</a>
+							<div class="footer__policy">
+								<a href="" class="footer__link footer__link--policy">Privacy Policy</a>
+								<a href="" class="footer__link footer__link--terms">Terms of&#160;Use</a>
 							</div>
 						</div>
-						<div class="social">
+						<div class="footer__social">
 							<a href="">
-								<img src="./img/footer/instagram.svg" alt="" />
+								<svg class="icon icon--instagram">
+									<use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
+								</svg>
 							</a>
 							<a href="">
-								<img src="./img/footer/facebook (1).svg" alt="" />
+								<svg class="icon icon--facebook">
+									<use href="./img/svgsprite/sprite.symbol.svg#facebook"></use>
+								</svg>
 							</a>
 							<a href="">
-								<img src="./img/footer/youtube (1).svg" alt="" />
+								<svg class="icon icon--youtube">
+									<use href="./img/svgsprite/sprite.symbol.svg#youtube"></use>
+								</svg>
 							</a>
 						</div>
 					</div>

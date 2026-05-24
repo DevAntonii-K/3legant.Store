@@ -3,24 +3,23 @@ export default function likeButtons() {
 
     buttons.forEach(btn => {
 
-        // initial state
-        btn.dataset.state = 'off';
+        const offSrc = btn.src;
+        const onSrc = btn.src.replace('add-to-wishlist.png', 'add-to-wishlist-on.png');
+
+        let state = 'off';
 
         btn.addEventListener('click', () => {
 
-            // 1. start animation
             btn.classList.add('is-animating');
 
-            // 2. toggle image + state
-            if (btn.dataset.state === 'on') {
-                btn.src = btn.dataset.off;
-                btn.dataset.state = 'off';
+            if (state === 'on') {
+                btn.src = offSrc;
+                state = 'off';
             } else {
-                btn.src = btn.dataset.on;
-                btn.dataset.state = 'on';
+                btn.src = onSrc;
+                state = 'on';
             }
 
-            // 3. remove animation after short delay
             setTimeout(() => {
                 btn.classList.remove('is-animating');
             }, 200);

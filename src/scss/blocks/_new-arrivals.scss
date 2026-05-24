@@ -1,71 +1,68 @@
 
 
+
 .new-arrivals__container{
-    width: 1120px;
+    max-width: 1150px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     gap: 48px;
-    
-    @media (max-width: 376px) {
+    @include tablet-land {
+        padding: 0 32px;
+    }
+    @include tablet {
+        align-items: center;
+        gap: 40px;
+    }
+    @include mobile-l {
         display: flex;
         flex-direction: column;
-        gap: 40px;
-        padding-left: 32px;
+    }   
+    @include mobile-s {
+        padding: 0 24px;
     }
-    
 }
 
 .new-arrivals {
-    padding: 48px 0;
-        
-        @include mobile {
-            padding:32px 0;
+    padding: 48px 0;    
+    @include tablet {
+        padding:  40px 0;
+    }
+    
+    .new-arrivals__title{
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -0.4px;
+        @include tablet {
+            text-align: center;
         }
-        .new-arrivals__title{
-            font-family: var(--font-secondary);
-            font-weight: 500;
-            font-size: 40px;
-            line-height: 44px;
-            letter-spacing: -0.4px;
-
-            @media (max-width: 376px) {
-              font-size: 34px;
-              line-height: 38px;
-              letter-spacing: -0.6px;
-            }
+        @include mobile-l {
+            font-size: 34px;
+            line-height: 38px;
+            letter-spacing: -0.6px;
         }
-
+    }
 }
 
+// SWIPER SLIDER
 
 .new-arrivals__slider {
-    width: 100%;
-    // display: flex;
-
+    width: 100%;    
 }
-
-
-
-.slider__list {
-    // display: flex;
-    // gap: 24px;
-}
-
-
 
 .slider__card.swiper-slide{
     width: 262px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-
-    @media (max-width: 376px) {
+    @include mobile-l {
         max-width: 231px;
-    }
-   
+    }   
 }
-
 
 
 .slider__main {
@@ -74,36 +71,41 @@
     .slider__badge{
         width: 67px;
         height: 24px;
+        padding: 4px 14px;
 
         font-family: var(--font-main);
         font-weight: 700;
         font-size: 16px;
         line-height: 16px;
-
-        padding: 4px 14px;
+   
         background-color: #fff;
-
         position: absolute;
         top: 16px;
         left:16px;
     }
+
     .slider__like-btn{
         width: 32px;
         height: 32px;
-        position: absolute;
-        
+        position: absolute;       
         top:16px;
         right:16px;
-
         transition: transform 0.2s ease, opacity 0.2s ease;
+        cursor: pointer;
+        @include mobile-l {
+            width: 48px;
+            height: 48px;
+            top: 13px;
+            right: 10px;
+        }
     }
 
     .slider__like-btn.is-animating {
-        transform: scale(1.2    );
+        transform: scale(1.2);
         opacity: 0.6;
     }
     
-    .add-to-cart-btn {
+    .slider__add-btn {
         font-family: var(--font-main);
         font-size: 16px;
         line-height: 28px;
@@ -118,17 +120,19 @@
         position: absolute;
         bottom: 16px;
         left: 16px;
-        
-        @media (max-width: 376px) {
-          padding: 6.30px 60.40px;
+
+        transition: transform 0.1s ease-out;
+        @include mobile-l {
+            padding: 6px 60px;
         }
+    }
+
+    .slider__add-btn:active{
+        transform: scale(0.97);
     }
 }
 
-
-
 .slider__desc {
-
     display: flex;
     flex-direction: column;
     gap: 4px;

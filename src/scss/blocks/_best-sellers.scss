@@ -1,31 +1,39 @@
-.best-sellers {
+
+
+
+    .best-sellers {
     padding: 48px 0 100px 0;
-    
+    @include tablet {
+        padding: 40px 0;
+    }
     a{
         color: var(--main-text-color);
     }
 }
-@media (max-width: 376px) {
-  .best-sellers{
-    padding:40px 32px;
-  }
-}
 
 
 .best-sellers__container{
-    width: 1120px;
+    max-width: 1150px;
+    width: 100%;
     margin: 0 auto;
     display: flex; 
     gap: 48px;
+    padding: 0 15px;
     flex-direction: column;
-}
-@media (max-width: 376px) {
-  .best-sellers__container{
-    max-width: 311px;
-    gap: 16px;
-    align-items: center;
-    margin: 0;
-  }
+    @include tablet-land {
+        padding: 0 32px;
+    }
+    @include tablet {
+        align-items: center;
+        gap: 40px;
+    }
+    @include mobile-l {
+        padding: 0 32px;
+        gap: 16px;       
+    }
+    @include mobile-s {
+        padding: 0 24px;
+    }
 }
 
 .best-sellers__title{
@@ -33,44 +41,78 @@
     font-size: 40px;
     font-weight: 500;
     line-height: 44px;
-    @include mobile {
+    @include tablet-land {
+        
+    }
+    @include mobile-l {
         font-size: 34px;
     }
 }
+
 .best-sellers__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 262px));
     column-gap: 24px;
     row-gap: 48px;
-}
-@media (max-width: 376px) {
-.best-sellers__list{
-    column-gap: 7px;
-    row-gap: 16px;
-}
+    justify-content: center;
+    @media(max-width:820px){
+        column-gap: 12px;
+        row-gap: 24px;
+    }
+    @include tablet {
+        grid-template-columns: repeat(2, minmax(150px, 262px));
+    }
+    @include mobile-l {
+        max-width: 100%;
+        column-gap: 8px;
+        row-gap: 16px;
+    }
+    @include mobile-s {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 12px;
+        row-gap: 24px;
+    }
 }
 
-.best-seller__item-card {
-    width: 262px;
+
+.best-sellers__item-card {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    flex: 1 1 200px;
+    max-width: 262px; 
+    min-width: 0;
+    gap: 12px;  
+    transition: all 0.3s ease;
+    @include tablet {
+        max-width:100%;
+    }
+    @include mobile-l {
+
+    }
 }
-@media (max-width: 376px) {
-.best-seller__item-card{
-    width: 152px;
-      
+
+.best-sellers__img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    @include mobile-s {
+       
+    }
 }
+
+.best-sellers__item-card:hover{
+    transform: scale(1.05);
 }
+
 // ------------------------------
 
-.best-seller__main {
+.best-sellers__main {
     position: relative;
     margin-bottom: 12px;
 }
 
-.best-seller__badge {
+.best-sellers__badge {
     width: 67px;
     height: 24px;
 
@@ -83,38 +125,36 @@
     background-color: #fff;
 
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 5%;
+    left: 5%;
 }
 
-.best-seller__desc {
+.best-sellers__desc {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    @include mobile-l {
+        height: 68px;
+    }
 }
 
-@media (max-width: 376px) {
-  .best-seller__desc{
-    height:68px;
 
-  }
-  
-}
-
-.best-seller__item-rating {
+.best-sellers__item-rating {
     width: 88px;
     height: 16px;
 }
 
-.best-seller__item-name {
+.best-sellers__item-name {
     font-family: var(--font-main);
     font-weight: 600;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0;
-}
-@media (max-width: 376px) {
-    .best-seller__item-name{
+    @include tablet-land {
+        font-size: 14px;
+        line-height: 22.75px;
+    }
+    @include mobile-l {
         font-weight: 600;
         font-size: 14px;
         line-height: 22px;
@@ -122,7 +162,9 @@
     }
 }
 
-.best-seller__price {
+
+
+.best-sellers__price {
     font-family: var(--font-main);
     font-weight: 600;
     font-size: 14px;
@@ -131,17 +173,20 @@
 }
 
 
-.item--elipsis{
-    @media (max-width: 376px) {
-    white-space: nowrap;
-        /* Текст в один рядок */
-        overflow: hidden;
-        /* Ховаємо те, що не влізло */
-        text-overflow: ellipsis;
-        /* Малюємо три крапки */
-    
-        br {
-            display: none;
+.item--elipsis {
+    @include tablet {
+        br{
+            display:none;
         }
     }
+    @include mobile-l {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+    
+            br {
+                display: none;
+            }
+        }
+
 }

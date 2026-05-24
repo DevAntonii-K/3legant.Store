@@ -10,7 +10,19 @@
 	width: 24px;
 	height: 24px;
 }
+.icon.icon--instagram,
+.icon.icon--facebook,
+.icon.icon--youtube{
+	stroke:white;
+	transition: all 0.3s ease;
+}
 
+.icon.icon--instagram:hover,
+.icon.icon--facebook:hover,
+.icon.icon--youtube:hover{
+	stroke:var(--accent);
+	transform:scale(1.15);
+}
 
 .like-btn--off{
 	width: 32px;

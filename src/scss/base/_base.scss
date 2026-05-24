@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
 
+html, body {
+	overflow-x:hidden;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -8,7 +12,7 @@ body {
 	background-color: white;
 	color: var(--text-color);
 	font-family: var(--font-main);
-	text-wrap: balance;
+	text-wrap: balance;	
 }
 
 img {
